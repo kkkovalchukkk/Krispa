@@ -1,0 +1,25 @@
+.page-list {
+  width: 100%;
+  position: relative;
+}
+
+.page {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: start;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: $defaultTransitionTime;
+  transform: scale(0);
+  &--active {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+  }
+}

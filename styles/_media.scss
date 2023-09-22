@@ -1,0 +1,157 @@
+@media (max-width: 1024px) {
+  .win-section__btn,
+  .reviews-section__btn,
+  .team-section__btn,
+  .materials-section__btn {
+    display: none;
+  }
+  .swiper-navigation {
+    margin-right: 0;
+  }
+  .win-section__mobile-btn,
+  .reviews-section__mobile-btn,
+  .team-section__mobile-btn,
+  .materials-section__mobile-btn {
+    display: initial;
+    margin-top: 32px;
+  }
+}
+
+@media (max-width: 767px) {
+  .map-holder {
+    height: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 16.4px;
+    align-items: flex-start;
+    justify-content: start;
+    &__map {
+      height: 400px;
+      border-radius: 24.63px;
+      box-shadow: 3.07872px 3.07872px 15.39359px 0px rgba(0, 0, 0, 0.04);
+    }
+    &__block-list-item-bottom--tels {
+      flex-direction: column;
+    }
+    &__block {
+      width: 100%;
+      max-width: unset;
+      position: static;
+      padding: 32px;
+      &-list {
+        display: grid;
+        gap: 64px;
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  }
+}
+
+@media (max-width: 568px) {
+  .subheading {
+    font-size: 32px !important;
+    font-style: normal !important;
+    font-weight: 500 !important;
+    line-height: 110% !important; /* 35.2px */
+    letter-spacing: -0.32px !important;
+  }
+
+  .link {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%; /* 17.6px */
+    letter-spacing: -0.16px;
+    gap: 4px;
+    &__icon {
+      svg {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+  .socials {
+    gap: 16px;
+    svg {
+      width: 32px;
+      height: 32px;
+    }
+  }
+  // .btn {
+  //   padding: 20px 32px;
+  //   font-size: 16px;
+  //   font-style: normal;
+  //   font-weight: 400;
+  //   line-height: 108%; /* 17.28px */
+  //   letter-spacing: -0.16px;
+  // }
+}
+
+@media (max-width: 522px) {
+  .company-section__box-image {
+    top: 88px;
+  }
+}
+@media (max-width: 485px) {
+  .company-section__box-image {
+    height: 250px;
+  }
+  .company-section__heading {
+    margin-bottom: 290px;
+  }
+}
+
+@media (max-width: 375px) {
+  .company-section__box-image {
+    height: 220px;
+  }
+  .company-section__heading {
+    margin-bottom: 256px;
+  }
+  .company-section__box-image {
+    top: 100px;
+  }
+  .company-section__box-text-content {
+    gap: 16px;
+  }
+  .company-section__box-content {
+    gap: 15px;
+  }
+  .win-section__mobile-btn,
+  .reviews-section__mobile-btn,
+  .team-section__mobile-btn,
+  .materials-section__mobile-btn {
+    padding: 20px 32px;
+    margin-top: 32px !important;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 108%; /* 17.28px */
+    letter-spacing: -0.16px;
+    text-transform: uppercase;
+  }
+}
+
+@media (max-width: 1440px) {
+  // .header,
+  // .main {
+  //   .wrapper {
+  //     max-width: 1140px;
+  //   }
+  // }
+  .header {
+    &__wrapper {
+      padding-top: 31px;
+      padding-bottom: 30px;
+      padding-right: 18px;
+      padding-left: 20px;
+    }
+    &__btn {
+      padding: 17px 23px 16px 68px;
+      background-position: left 25px center;
+    }
+  }
+
+  .promo-section__wrapper {
+  }
+}

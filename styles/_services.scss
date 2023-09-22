@@ -1,0 +1,130 @@
+.center-services-section {
+  &__wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+  }
+
+  &__breadcrumbs {
+  }
+
+  &__tab-list {
+    margin-bottom: 47px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    @media (max-width: 1024px) {
+      gap: 20px;
+    }
+  }
+
+  .accordeon {
+    padding: 24px;
+
+    &-list {
+      grid-template-columns: 1fr 1fr 1fr;
+      row-gap: 15px;
+      column-gap: 24px;
+      @media (max-width: 1024px) {
+        gap: 20px;
+        grid-template-columns: 1fr 1fr;
+      }
+      @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+      }
+    }
+    &__heading-group {
+      gap: 12px;
+      @media (max-width: 1024px) {
+        gap: 16px;
+      }
+    }
+    &__heading-icon {
+      svg {
+        width: 24px;
+        height: 24px;
+        @media (max-width: 1024px) {
+          width: 32px;
+          height: 32px;
+        }
+      }
+    }
+    &__chevron {
+      svg {
+        width: 25px;
+        height: 25px;
+      }
+    }
+    &__heading {
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 110%; /* 16.5px */
+      letter-spacing: -0.15px;
+      @media (max-width: 1024px) {
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 110%; /* 22px */
+        letter-spacing: -0.2px;
+      }
+    }
+    @media (max-width: 1024px) {
+      padding: 32px;
+    }
+    @media (max-width: 768px) {
+      padding: 12px 20px;
+    }
+  }
+
+  &__page-box-list-item-link {
+    @extend .services-section__page-box-list-item-link;
+  }
+  &__text-content {
+    width: 100%;
+    margin-top: 90px;
+    padding: 60px 36px;
+    border-radius: 18px;
+    background: $white;
+    box-shadow: 1.5px 1.5px 7.5px 0px rgba(0, 0, 0, 0.04);
+
+    @media (max-width: 1024px) {
+      padding: 80px 32px;
+      border-radius: 24px;
+    }
+  }
+
+  &__text-content-heading {
+    @extend .subheading;
+    margin-bottom: 45px;
+    @media (max-width: 1024px) {
+      margin-bottom: 60px;
+    }
+  }
+
+  &__text-group {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    @media (max-width: 1024px) {
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+  }
+
+  &__text {
+    color: $darkGray;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: $mainFont;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 28px */
+    letter-spacing: -0.2px;
+  }
+}

@@ -1,0 +1,31 @@
+// utils
+
+@import './reset';
+@import './fonts';
+@import './vars';
+@import './mixins';
+@import './styles';
+
+// ui
+
+@import './UI/header';
+@import './UI/main-nav';
+@import './UI/footer';
+@import './UI/form';
+@import './UI/accordeon';
+@import './UI/mobile-menu';
+@import './UI/popup';
+@import './UI/breadcrumbs';
+@import './UI/page-list';
+@import './UI/pagination';
+
+// pages
+
+@import './faq';
+@import './practice';
+@import './case';
+@import './services';
+
+// media
+
+@import './media';
