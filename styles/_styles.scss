@@ -1,4 +1,10 @@
+html,
+main {
+  min-height: 100vh;
+}
+
 body {
+  min-height: 100vh;
   min-width: 320px;
   font-family: $mainFont;
   background: $bgGray;
@@ -77,16 +83,12 @@ body.no-scroll {
   @include click();
 
   &_orange {
-    background-color: var(--orange, #ee4b28);
-    background-image: url('../assets/svg/tel-icon.svg');
-    background-repeat: no-repeat;
-    background-size: 16px;
-    background-position: left 24px center;
+    background: var(--orange, #ee4b28);
+
     &:hover {
       outline: 1px solid $orange;
       background-color: transparent;
       color: $orange;
-      background-image: url('../assets/svg/tel-icon-orange.svg');
     }
   }
   &_blue {
@@ -1295,6 +1297,17 @@ input[type='checkbox']:checked + .form__checkbox {
         width: 100%;
         height: 100%;
         gap: 16px;
+      }
+    }
+  }
+  @media (max-width: 374px) {
+    &__box {
+      grid-template-columns: 1fr;
+      &-col {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
       }
     }
   }
