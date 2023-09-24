@@ -32,6 +32,7 @@
   }
 
   &__load-more-btn {
+    display: none;
     margin-top: 32px;
   }
 
@@ -42,6 +43,16 @@
     column-gap: 15px;
     row-gap: 30px;
     transition: $middleDefaultTransitionTime;
+    .team-card {
+      height: 458px;
+      &__link {
+        margin-right: auto;
+        margin-top: auto;
+      }
+      @media (max-width: 960px) {
+        height: auto;
+      }
+    }
     @media (max-width: 1024px) {
       grid-template-columns: repeat(3, 1fr);
     }
@@ -55,6 +66,12 @@
       grid-template-columns: 1fr;
       max-height: 2060px;
       overflow: hidden;
+    }
+  }
+
+  @media (max-width: 625px) {
+    &__load-more-btn {
+      display: initial;
     }
   }
 }

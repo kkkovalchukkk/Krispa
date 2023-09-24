@@ -165,10 +165,7 @@
   @media (max-width: 1024px) {
     padding: 0px 32px;
     &__wrapper {
-      padding-top: 29px;
-      padding-bottom: 34px;
-      padding-left: 32px;
-      padding-right: 32px;
+      padding: 32px;
     }
 
     &__tel-group {
@@ -212,7 +209,7 @@
 
   @media (max-width: 768px) {
     &__wrapper {
-      padding: 29px 24px;
+      padding: 24px;
     }
     &__logo-image {
       width: 49px;
@@ -259,6 +256,7 @@
     margin-bottom: 12px;
     &__wrapper {
       padding: 16px;
+      
     }
     &__logo-link {
       gap: 0.36px;
