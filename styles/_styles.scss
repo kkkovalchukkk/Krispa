@@ -96,12 +96,6 @@ body.no-scroll {
     }
   }
   @media (max-width: 960px) {
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 108%; /* 21.6px */
-    letter-spacing: -0.2px;
-    text-transform: uppercase;
   }
 }
 .navigation-section {
@@ -900,7 +894,11 @@ input[type='checkbox']:checked + .form__checkbox {
   line-height: 110%; /* 49.5px */
   letter-spacing: -0.45px;
   @media (max-width: 1024px) {
-    font-size: 60px;
+    margin-bottom: 49px;
+  }
+  @media (max-width: 1024px) {
+    margin-bottom: 61px;
+    font-size: 40px;
     font-style: normal;
     font-weight: 500;
     line-height: 108%; /* 64.8px */
@@ -1908,6 +1906,16 @@ input[type='checkbox']:checked + .form__checkbox {
   &__swiper-slide {
     width: 100%;
     max-width: calc(100% / 3 - 20px);
+
+    @media (max-width: 1280px) {
+      max-width: 508px;
+    }
+    @media (max-width: 768px) {
+      max-width: 350px;
+    }
+    @media (max-width: 568px) {
+      max-width: 320px;
+    }
   }
   &__mobile-btn {
     display: none;
@@ -2001,7 +2009,7 @@ input[type='checkbox']:checked + .form__checkbox {
     padding-bottom: 2.5px;
     background-image: url('../assets/svg/calendan-icon.svg');
     background-repeat: no-repeat;
-    background-position: left center;
+    background-position: left top -1px;
     background-size: 16px;
   }
 
@@ -2081,15 +2089,20 @@ input[type='checkbox']:checked + .form__checkbox {
   &__link {
     margin-top: 19px;
   }
-  @media (max-width: 960px) {
-    &__img {
-      border-radius: 24px;
-    }
+
+  @media (max-width: 1023px) {
     &__row {
       flex-direction: column;
       align-items: flex-start;
       gap: 12px;
     }
+  }
+
+  @media (max-width: 960px) {
+    &__img {
+      border-radius: 24px;
+    }
+
     &__heading {
       font-size: 20px;
       font-style: normal;
@@ -2199,6 +2212,9 @@ input[type='checkbox']:checked + .form__checkbox {
     flex-direction: column;
     align-items: center;
     justify-content: end;
+    @media (max-width: 1024px) {
+      max-width: 508px;
+    }
   }
   &__mobile-btn {
     display: none;
@@ -2215,14 +2231,6 @@ input[type='checkbox']:checked + .form__checkbox {
   @media (max-width: 960px) {
     &__heading {
       max-width: 535px;
-      font-size: 48px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: 110%; /* 52.8px */
-      letter-spacing: -0.48px;
-    }
-    &__swiper-slide {
-      max-width: 400px;
     }
   }
 
@@ -2281,6 +2289,10 @@ input[type='checkbox']:checked + .form__checkbox {
     object-fit: cover;
     object-position: center;
     border-radius: 50%;
+    @media (max-width: 1024px) {
+      width: 140px;
+      height: 140px;
+    }
   }
   &__date {
     color: $defaultTransitionTime;
@@ -2339,7 +2351,7 @@ input[type='checkbox']:checked + .form__checkbox {
       letter-spacing: -0.14px;
     }
     &__heading {
-      font-size: 20px;
+      font-size: 18px;
       font-style: normal;
       font-weight: 500;
       line-height: 110%; /* 22px */
@@ -2438,13 +2450,6 @@ input[type='checkbox']:checked + .form__checkbox {
     }
   }
   @media (max-width: 960px) {
-    &__heading {
-      font-size: 48px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: 110%; /* 52.8px */
-      letter-spacing: -0.48px;
-    }
     &__swiper-slide {
       max-width: 48.8%;
     }
@@ -2457,7 +2462,7 @@ input[type='checkbox']:checked + .form__checkbox {
       margin-bottom: 61px;
     }
     &__mobile-btn.btn {
-      margin-top: 24px !important;
+      margin-top: 18px !important;
     }
   }
 
@@ -2534,14 +2539,14 @@ input[type='checkbox']:checked + .form__checkbox {
     }
     &__heading {
       margin-bottom: 16px;
-      font-size: 20px;
+      font-size: 18px;
       font-style: normal;
       font-weight: 500;
       line-height: 110%; /* 22px */
       letter-spacing: -0.2px;
     }
     &__text {
-      font-size: 20px;
+      font-size: 16px;
       font-style: normal;
       font-weight: 400;
       line-height: 110%; /* 22px */

@@ -13,7 +13,7 @@
   .team-section__mobile-btn,
   .materials-section__mobile-btn {
     display: initial;
-    margin-top: 32px;
+    margin-top: 32px !important;
   }
 }
 
@@ -49,6 +49,7 @@
 
 @media (max-width: 568px) {
   .subheading {
+    margin-bottom: 32px;
     font-size: 32px !important;
     font-style: normal !important;
     font-weight: 500 !important;
