@@ -77,11 +77,16 @@ body.no-scroll {
   @include click();
 
   &_orange {
-    background: var(--orange, #ee4b28);
+    background-color: var(--orange, #ee4b28);
+    background-image: url('../assets/svg/tel-icon.svg');
+    background-repeat: no-repeat;
+    background-size: 16px;
+    background-position: left 24px center;
     &:hover {
       outline: 1px solid $orange;
       background-color: transparent;
       color: $orange;
+      background-image: url('../assets/svg/tel-icon-orange.svg');
     }
   }
   &_blue {
