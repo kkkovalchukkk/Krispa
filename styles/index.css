@@ -1202,13 +1202,13 @@ input[type=checkbox]:checked + .form__checkbox {
 }
 .advantages-section__box {
   margin-top: 15px;
-  padding: 53px 36px;
+  padding: 38px 27px;
 }
 .advantages-section__box-col {
   gap: 8px;
 }
 .advantages-section__box-col-count {
-  font-size: 54px;
+  font-size: 46px;
   font-style: normal;
   font-weight: 600;
   line-height: 108%; /* 58.32px */
@@ -1216,7 +1216,7 @@ input[type=checkbox]:checked + .form__checkbox {
 }
 .advantages-section__box-col-text {
   max-width: 206px;
-  font-size: 18px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 110%; /* 19.8px */
@@ -1457,23 +1457,13 @@ input[type=checkbox]:checked + .form__checkbox {
   height: 390px;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
+  -o-object-position: top;
+     object-position: top;
   border-radius: 24px;
-}
-@media (max-width: 1440px) {
-  .company-section__box-image {
-    height: 750px;
-  }
-}
-@media (max-width: 1280px) {
-  .company-section__box-image {
-    height: 608px;
-  }
 }
 @media (max-width: 1024px) {
   .company-section__box-image {
-    height: 520px;
+    height: 280px;
   }
 }
 .company-section__box-content {
