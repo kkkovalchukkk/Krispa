@@ -1,8 +1,11 @@
 window.addEventListener('DOMContentLoaded', () => {
+  const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+
   const forms = document.querySelectorAll('.form');
   const telInputs = document.querySelectorAll('input[name="tel"]');
   const nameInputs = document.querySelectorAll('input[name="name"]');
   const checkboxInputs = document.querySelectorAll('input[name="politics"');
+  const emailInputs = document.querySelectorAll('input[name="email"]');
 
   const submitForm = (e) => {
     e.preventDefault();
@@ -10,6 +13,8 @@ window.addEventListener('DOMContentLoaded', () => {
     const nameInput = e.target.name;
     const telInput = e.target.tel;
     const checkBoxInput = e.target.politics;
+    const emailInput = e.target.email;
+    const reviewsInput = e.target.review;
 
     if (!checkBoxInput.checked) {
       checkBoxInput.classList.add('invalid');
@@ -89,5 +94,17 @@ window.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  if (emailInputs) {
+    emailInputs.forEach((input) => {
+      input.addEventListener('input', (event) => {
+        const inputValue = event.target.value;
+        if (!emailRegex.test(inputValue)) {
+          input.classList.add('invalid');
+        } else {
+          input.classList.remove('invalid');
+        }
+      });
+    });
+  }
   forms.forEach((form) => form.addEventListener('submit', submitForm));
 });
