@@ -4397,7 +4397,7 @@ input[type=checkbox].invalid + .form__checkbox {
   color: #0069a3;
 }
 .accordeon:hover .accordeon__header path {
-  fill: #0069a3;
+  stroke: #0069a3;
 }
 .accordeon--active {
   padding-bottom: 32px;
@@ -4406,7 +4406,7 @@ input[type=checkbox].invalid + .form__checkbox {
   color: #0069a3;
 }
 .accordeon--active .accordeon__header path {
-  fill: #0069a3;
+  stroke: #0069a3;
 }
 .accordeon--active .accordeon__content {
   margin-top: 33px;
