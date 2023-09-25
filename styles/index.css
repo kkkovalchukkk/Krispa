@@ -8008,6 +8008,14 @@ input[type=checkbox].invalid + .form__checkbox {
   .big-contacts-section__form {
     padding: 24px;
   }
+  .big-contacts-section__form .form__heading {
+    margin-bottom: 16px;
+    font-size: 24px;
+  }
+  .big-contacts-section__form .form__text {
+    margin-bottom: 16px;
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 1024px) {
