@@ -186,6 +186,9 @@
   }
 
   &__form {
+    position: sticky;
+    left: 0;
+    top: 0;
     padding: 31px;
     align-items: flex-start;
     .form__text {

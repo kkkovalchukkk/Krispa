@@ -5168,6 +5168,9 @@ input[type=checkbox].invalid + .form__checkbox {
 }
 
 .sidebar {
+  position: sticky;
+  left: 0;
+  top: 16px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -7099,6 +7102,9 @@ input[type=checkbox].invalid + .form__checkbox {
   letter-spacing: -0.15px;
 }
 .all-reviews-section__form {
+  position: sticky;
+  left: 0;
+  top: 0;
   padding: 31px;
   align-items: flex-start;
 }
