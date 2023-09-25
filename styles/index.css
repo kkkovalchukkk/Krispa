@@ -6972,6 +6972,46 @@ input[type=checkbox].invalid + .form__checkbox {
   gap: 15px;
   grid-template-columns: 74.68% 24.04%;
 }
+.all-reviews-section__date {
+  padding-left: 18px;
+  margin-bottom: 24px;
+  background-repeat: no-repeat;
+  background-position: left top -1px;
+  background-size: contain;
+  background-image: url("../assets/svg/calendan-icon.svg");
+  color: #999999;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 108%; /* 12.96px */
+  letter-spacing: -0.12px;
+}
+.all-reviews-section__list-card-btn-link {
+  padding: 18px 30px;
+  border-radius: 93.446px;
+  background: #0069a3;
+  color: #fff;
+  text-align: center;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 108%; /* 16.2px */
+  letter-spacing: -0.15px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.23s;
+}
+.all-reviews-section__list-card-btn-link:hover {
+  background-color: transparent;
+  color: #0069a3;
+  outline: 1px solid #0069a3;
+}
 .all-reviews-section__content {
   width: 100%;
   padding: 36px;
@@ -7153,6 +7193,21 @@ input[type=checkbox].invalid + .form__checkbox {
   outline: 1px solid #0069a3;
   color: #0069a3;
 }
+.all-reviews-section--review .subheading, .all-reviews-section--review .text-content__heading {
+  margin-bottom: 25.5px;
+}
+.all-reviews-section--review .all-reviews-section__list-card-body {
+  padding: 0;
+  border: none;
+  background: none;
+}
+.all-reviews-section--review .all-reviews-section__list-card-img {
+  max-width: 165px;
+}
+.all-reviews-section--review .all-reviews-section__date {
+  margin-bottom: 24px;
+  display: inline-block;
+}
 @media (max-width: 1096px) {
   .all-reviews-section__wrapper {
     grid-template-columns: 1fr;
@@ -7173,6 +7228,29 @@ input[type=checkbox].invalid + .form__checkbox {
   }
   .all-reviews-section__form-review {
     display: flex;
+  }
+  .all-reviews-section--review .all-reviews-section__list-card {
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+  }
+  .all-reviews-section--review .all-reviews-section__list-card-body {
+    padding: 40px;
+    border-radius: 24px;
+    border: 1px solid #eaeaea;
+    background: #fff;
+    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.04);
+  }
+  .all-reviews-section--review .all-reviews-section__list-card-img {
+    max-width: unset;
+    width: 220px;
+    height: 220px;
+  }
+  .all-reviews-section--review .all-reviews-section__heading {
+    margin-bottom: 32px;
+  }
+  .all-reviews-section--review .all-reviews-section__date {
+    margin-bottom: 64px;
   }
 }
 @media (max-width: 960px) {
@@ -7260,6 +7338,82 @@ input[type=checkbox].invalid + .form__checkbox {
   }
 }
 
+.blog-section__wrapper {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: start;
+}
+.blog-section__list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 354px;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+  row-gap: 30px;
+}
+@media (max-width: 1024px) {
+  .blog-section__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .blog-section__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 525px) {
+  .blog-section__list {
+    grid-template-columns: 1fr;
+  }
+}
+.blog-section__card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: start;
+}
+.blog-section__card-img {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 18px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 18px;
+}
+@media (max-width: 1024px) {
+  .blog-section__card-img {
+    height: 180px;
+  }
+}
+.blog-section__card-heading {
+  margin-bottom: 12px;
+  color: #13151c;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%;
+  letter-spacing: -0.18px;
+}
+.blog-section__card-text {
+  margin-bottom: auto;
+  color: #999999;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%; /* 16.5px */
+  letter-spacing: -0.15px;
+}
 @media (max-width: 1024px) {
   .win-section__btn,
   .reviews-section__btn,
