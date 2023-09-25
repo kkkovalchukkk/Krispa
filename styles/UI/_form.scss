@@ -11,6 +11,7 @@
   padding: 52px 55px;
 
   &__heading {
+    width: 100%;
     margin-bottom: 31px;
     max-width: 475px;
     color: $black;
@@ -26,6 +27,7 @@
   }
 
   &__text {
+    width: 100%;
     max-width: 259px;
     margin-bottom: 31px;
     color: $black;

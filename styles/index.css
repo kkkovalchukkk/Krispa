@@ -641,6 +641,7 @@ body.no-scroll {
   z-index: -2;
 }
 .image-block__text {
+  width: 100%;
   max-width: 729px;
   margin-bottom: 30px;
   color: #fff;
@@ -791,6 +792,7 @@ input[type=checkbox]:checked + .form__checkbox {
   background: none;
 }
 .services-section__services-list-item {
+  max-width: 250px;
   display: flex;
   align-items: center;
   gap: 12px;
@@ -1102,6 +1104,8 @@ input[type=checkbox]:checked + .form__checkbox {
   }
 }
 .advantages-section__list-item-text {
+  width: 100%;
+  max-width: 253px;
   position: relative;
   z-index: 2;
   color: #13151c;
@@ -1666,6 +1670,7 @@ input[type=checkbox]:checked + .form__checkbox {
   padding-right: 18.75px;
 }
 .consult-section .form__text {
+  width: 100%;
   max-width: unset;
   margin-bottom: 22px;
   color: #13151c;
@@ -2156,6 +2161,7 @@ input[type=checkbox]:checked + .form__checkbox {
   gap: 8px;
 }
 .card__text {
+  width: 100%;
   color: #13151c;
   leading-trim: both;
   text-edge: cap;
@@ -2167,6 +2173,7 @@ input[type=checkbox]:checked + .form__checkbox {
   letter-spacing: -0.2px;
 }
 .card__subtext {
+  width: 100%;
   color: #999999;
   leading-trim: both;
   text-edge: cap;
@@ -3206,6 +3213,7 @@ input[type=checkbox]:checked + .form__checkbox {
 }
 .map-holder__block-list-item {
   width: 100%;
+  max-width: 285px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -3234,6 +3242,8 @@ input[type=checkbox]:checked + .form__checkbox {
   background-image: url("../assets/svg/map-icon.svg");
 }
 .map-holder__block-list-item-bottom {
+  width: 100%;
+  max-width: 300px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -3253,6 +3263,7 @@ input[type=checkbox]:checked + .form__checkbox {
   letter-spacing: -0.2px;
 }
 .map-holder__block-list-item-subtext {
+  width: 100%;
   color: #999999;
   leading-trim: both;
   text-edge: cap;
@@ -4220,6 +4231,7 @@ input[type=checkbox]:checked + .form__checkbox {
   padding: 52px 55px;
 }
 .form__heading {
+  width: 100%;
   margin-bottom: 31px;
   max-width: 475px;
   color: #13151c;
@@ -4234,6 +4246,7 @@ input[type=checkbox]:checked + .form__checkbox {
   letter-spacing: -0.36px;
 }
 .form__text {
+  width: 100%;
   max-width: 259px;
   margin-bottom: 31px;
   color: #13151c;
@@ -5235,6 +5248,8 @@ input[type=checkbox].invalid + .form__checkbox {
   }
 }
 .sidebar__block {
+  width: 100%;
+  max-width: 283px;
   padding: 30px;
   padding-right: 36px;
   border-radius: 24px;
@@ -6392,6 +6407,8 @@ input[type=checkbox].invalid + .form__checkbox {
   overflow: hidden;
 }
 .grid-list__box-heading {
+  width: 100%;
+  max-width: 298px;
   position: relative;
   color: #13151c;
   leading-trim: both;
@@ -6587,7 +6604,7 @@ input[type=checkbox].invalid + .form__checkbox {
 .about-company-section__content {
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 50% 50%;
   gap: 18px;
   margin-top: 15px;
   border-radius: 18px;
@@ -6602,6 +6619,7 @@ input[type=checkbox].invalid + .form__checkbox {
   }
 }
 .about-company-section__content-text {
+  width: 100%;
   color: #999999;
   leading-trim: both;
   text-edge: cap;
@@ -7644,6 +7662,7 @@ input[type=checkbox].invalid + .form__checkbox {
   box-shadow: 1.5px 1.5px 7.5px 0px rgba(0, 0, 0, 0.04);
 }
 .article-section__content-middle-text {
+  width: 100%;
   color: #999999;
   leading-trim: both;
   text-edge: cap;
@@ -7671,6 +7690,7 @@ input[type=checkbox].invalid + .form__checkbox {
   gap: 18px;
 }
 .article-section__content-middle-list-item-heading {
+  width: 1005px;
   color: #13151c;
   leading-trim: both;
   text-edge: cap;
@@ -7690,6 +7710,7 @@ input[type=checkbox].invalid + .form__checkbox {
   gap: 2px;
 }
 .article-section__content-middle-list-item-text {
+  width: 100%;
   color: #999999;
   leading-trim: both;
   text-edge: cap;

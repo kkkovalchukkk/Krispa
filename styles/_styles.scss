@@ -496,6 +496,7 @@ body.no-scroll {
   }
 
   &__text {
+    width: 100%;
     max-width: 729px;
     margin-bottom: 30px;
     color: $white;
@@ -653,6 +654,7 @@ input[type='checkbox']:checked + .form__checkbox {
   }
 
   &__services-list-item {
+    max-width: 250px;
     display: flex;
     align-items: center;
     gap: 12px;
@@ -984,6 +986,8 @@ input[type='checkbox']:checked + .form__checkbox {
   }
 
   &__list-item-text {
+    width: 100%;
+    max-width: 253px;
     position: relative;
     z-index: 2;
     color: $black;
@@ -1566,6 +1570,7 @@ input[type='checkbox']:checked + .form__checkbox {
     padding-bottom: 31px;
     padding-right: 18.75px;
     &__text {
+      width: 100%;
       max-width: unset;
       margin-bottom: 22px;
       color: $black;
@@ -2076,6 +2081,7 @@ input[type='checkbox']:checked + .form__checkbox {
   }
 
   &__text {
+    width: 100%;
     color: $black;
     leading-trim: both;
     text-edge: cap;
@@ -2088,6 +2094,7 @@ input[type='checkbox']:checked + .form__checkbox {
   }
 
   &__subtext {
+    width: 100%;
     color: $darkGray;
     leading-trim: both;
     text-edge: cap;
@@ -3181,6 +3188,7 @@ input[type='checkbox']:checked + .form__checkbox {
 
   &__block-list-item {
     width: 100%;
+    max-width: 285px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -3213,6 +3221,8 @@ input[type='checkbox']:checked + .form__checkbox {
   }
 
   &__block-list-item-bottom {
+    width: 100%;
+    max-width: 300px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -3234,6 +3244,7 @@ input[type='checkbox']:checked + .form__checkbox {
   }
 
   &__block-list-item-subtext {
+    width: 100%;
     color: $darkGray;
     leading-trim: both;
     text-edge: cap;

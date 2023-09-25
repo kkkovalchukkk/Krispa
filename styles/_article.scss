@@ -127,6 +127,7 @@
   }
 
   &__content-middle-text {
+    width: 100%;
     color: $darkGray;
     leading-trim: both;
     text-edge: cap;
@@ -157,6 +158,7 @@
   }
 
   &__content-middle-list-item-heading {
+    width: 1005px;
     color: $black;
     leading-trim: both;
     text-edge: cap;
@@ -178,6 +180,7 @@
   }
 
   &__content-middle-list-item-text {
+    width: 100%;
     color: $darkGray;
     leading-trim: both;
     text-edge: cap;

@@ -473,6 +473,8 @@
   }
 
   &__box-heading {
+    width: 100%;
+    max-width: 298px;
     position: relative;
     color: $black;
     leading-trim: both;
