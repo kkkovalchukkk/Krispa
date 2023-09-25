@@ -60,7 +60,7 @@
     width: 100%;
     height: fit-content;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 50% 50%;
     grid-template-rows: auto;
     gap: 15px;
   }
@@ -92,6 +92,7 @@
   }
 
   &__group-heading {
+    width: 100%;
     color: $black;
     leading-trim: both;
     text-edge: cap;
@@ -104,6 +105,7 @@
   }
 
   &__group-text {
+    width: 100%;
     color: $darkGray;
     leading-trim: both;
     text-edge: cap;

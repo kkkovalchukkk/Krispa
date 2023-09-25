@@ -14,18 +14,18 @@
   &__list {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 25%);
     grid-template-rows: 354px;
     column-gap: 15px;
     row-gap: 30px;
     @media (max-width: 1024px) {
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(3, 33%);
     }
     @media (max-width: 768px) {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, 50%);
     }
     @media (max-width: 525px) {
-      grid-template-columns: 1fr;
+      grid-template-columns: 100%;
     }
   }
 
@@ -51,6 +51,7 @@
   }
 
   &__card-heading {
+    width: 100%;
     margin-bottom: 12px;
     color: $black;
     leading-trim: both;
@@ -64,6 +65,7 @@
   }
 
   &__card-text {
+    width: 100%;
     margin-bottom: auto;
     color: $darkGray;
     leading-trim: both;
