@@ -7926,7 +7926,7 @@ input[type=checkbox].invalid + .form__checkbox {
   margin-bottom: 14px;
   display: grid;
   gap: 15px;
-  grid-template-columns: 57.8% 40.92%;
+  grid-template-columns: 52.8% 45.92%;
 }
 .big-contacts-section__content {
   width: 100%;
@@ -8021,6 +8021,10 @@ input[type=checkbox].invalid + .form__checkbox {
 }
 @media (max-width: 1024px) {
   .big-contacts-section__group {
+    margin: 0 auto;
+    margin-bottom: 16px;
+    width: -moz-fit-content;
+    width: fit-content;
     grid-template-columns: 1fr;
   }
   .big-contacts-section__grid {
