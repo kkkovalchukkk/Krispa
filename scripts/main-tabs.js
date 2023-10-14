@@ -40,17 +40,15 @@ document.addEventListener('DOMContentLoaded', () => {
     );
 
     servicesSectionServicesListItems.forEach((listItem, idx) => {
-      listItem.addEventListener('click', () => {
-        servicesSectionServicesListItems.forEach((li) =>
+      listItem.addEventListener('mouseenter', () => {
+        servicesSectionServicesListItems?.forEach((li) =>
           li.classList.remove('services-section__services-list-item--active')
         );
-        servicesSectionPageBoxLists.forEach((boxList) =>
+        servicesSectionPageBoxLists?.forEach((boxList) =>
           boxList.classList.remove('services-section__page-box-list--active')
         );
-        listItem.classList.add('services-section__services-list-item--active');
-        console.log(servicesSectionPageBoxLists[idx]);
-
-        servicesSectionPageBoxLists[idx].classList.add(
+        listItem.classList?.add('services-section__services-list-item--active');
+        servicesSectionPageBoxLists[idx]?.classList.add(
           'services-section__page-box-list--active'
         );
       });
