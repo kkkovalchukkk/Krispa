@@ -2188,7 +2188,7 @@ input[type=checkbox]:checked + .form__checkbox {
   leading-trim: both;
   text-edge: cap;
   font-family: "Lato", sans-serif;
-  font-size: 18px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 500;
   line-height: 110%; /* 26.4px */
@@ -2208,7 +2208,7 @@ input[type=checkbox]:checked + .form__checkbox {
   leading-trim: both;
   text-edge: cap;
   font-family: Lato;
-  font-size: 18px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 110%; /* 22px */
