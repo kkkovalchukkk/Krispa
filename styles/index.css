@@ -163,6 +163,10 @@ body.no-scroll {
   overflow: hidden;
 }
 
+.swiper-button-disabled {
+  opacity: 0.5;
+}
+
 .map-circle-placemark svg {
   width: 59px;
   height: 59px;
