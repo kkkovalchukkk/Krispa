@@ -2129,8 +2129,10 @@ input[type=checkbox]:checked + .form__checkbox {
 .card__row {
   margin-bottom: 18px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
+  flex-direction: column;
+  gap: 12px;
 }
 .card__date, .case-section__time, .article-card__tiem {
   color: #999999;

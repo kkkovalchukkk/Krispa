@@ -2041,8 +2041,10 @@ input[type='checkbox']:checked + .form__checkbox {
   &__row {
     margin-bottom: 18px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
+    flex-direction: column;
+    gap: 12px;
   }
 
   &__date {
