@@ -2156,6 +2156,7 @@ input[type=checkbox]:checked + .form__checkbox {
   display: flex;
   align-items: center;
   gap: 6px;
+  flex-wrap: wrap;
 }
 .card__tag-link, .case-section__tag {
   padding: 4.5px 9px;

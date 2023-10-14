@@ -2070,6 +2070,7 @@ input[type='checkbox']:checked + .form__checkbox {
     display: flex;
     align-items: center;
     gap: 6px;
+    flex-wrap: wrap;
   }
 
   &__tag-link {
