@@ -2,7 +2,6 @@ window.addEventListener('DOMContentLoaded', () => {
   const winSectionSwiper = new Swiper('.win-section__swiper', {
     direction: 'horizontal',
     slidesPerView: 'auto',
-    loop: true,
     spaceBetween: 20,
     breakpoints: {
       320: {
@@ -34,7 +33,6 @@ window.addEventListener('DOMContentLoaded', () => {
   const reviewSectionSwiper = new Swiper('.reviews-section__swiper', {
     direction: 'horizontal',
     slidesPerView: 'auto',
-    loop: true,
     spaceBetween: 20,
     navigation: {
       nextEl: '.reviews-section__swiper-navigation-right',
@@ -44,7 +42,6 @@ window.addEventListener('DOMContentLoaded', () => {
   const teamSectionSwiper = new Swiper('.team-section__swiper', {
     direction: 'horizontal',
     slidesPerView: 'auto',
-    loop: true,
     spaceBetween: 20,
     navigation: {
       nextEl: '.team-section__swiper-navigation-right',
@@ -54,7 +51,6 @@ window.addEventListener('DOMContentLoaded', () => {
   const materialsSectionSwiper = new Swiper('.materials-section__swiper', {
     direction: 'horizontal',
     slidesPerView: 'auto',
-    loop: true,
     spaceBetween: 20,
     navigation: {
       nextEl: '.materials-section__swiper-navigation-right',
