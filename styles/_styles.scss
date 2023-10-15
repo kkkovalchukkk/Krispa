@@ -143,6 +143,9 @@ body.no-scroll {
 }
 .navigation-section {
   margin: 20px 0px;
+  &__wrapper {
+    max-width: 1196px;
+  }
   @media (max-width: 1024px) {
     margin: 10px 0px;
     margin-bottom: 32px;

@@ -76,10 +76,11 @@
   }
 
   &__submenu {
+    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.04);
     position: absolute;
-    left: -48px;
+    left: -37px;
     top: 100%;
-    width: calc(100% + 48px + 48px);
+    width: calc(100% + 28px + 46px);
     height: fit-content;
     background-color: #f6f6f6;
     padding-top: 40px;
