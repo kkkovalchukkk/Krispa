@@ -14,15 +14,15 @@ window.addEventListener('DOMContentLoaded', () => {
       },
       768: {
         slidesPerView: 'auto',
-        spaceBetween: 20,
+        spaceBetween: 24,
       },
       1024: {
         slidesPerView: 'auto',
-        spaceBetween: 20,
+        spaceBetween: 24,
       },
       1280: {
         slidesPerView: 'auto',
-        spaceBetween: 20,
+        spaceBetween: 24,
       },
     },
     navigation: {
@@ -33,7 +33,7 @@ window.addEventListener('DOMContentLoaded', () => {
   const reviewSectionSwiper = new Swiper('.reviews-section__swiper', {
     direction: 'horizontal',
     slidesPerView: 'auto',
-    spaceBetween: 20,
+    spaceBetween: 24,
     navigation: {
       nextEl: '.reviews-section__swiper-navigation-right',
       prevEl: '.reviews-section__swiper-navigation-left',
@@ -42,7 +42,7 @@ window.addEventListener('DOMContentLoaded', () => {
   const teamSectionSwiper = new Swiper('.team-section__swiper', {
     direction: 'horizontal',
     slidesPerView: 'auto',
-    spaceBetween: 20,
+    spaceBetween: 24,
     navigation: {
       nextEl: '.team-section__swiper-navigation-right',
       prevEl: '.team-section__swiper-navigation-left',
@@ -51,7 +51,7 @@ window.addEventListener('DOMContentLoaded', () => {
   const materialsSectionSwiper = new Swiper('.materials-section__swiper', {
     direction: 'horizontal',
     slidesPerView: 'auto',
-    spaceBetween: 20,
+    spaceBetween: 24,
     navigation: {
       nextEl: '.materials-section__swiper-navigation-right',
       prevEl: '.materials-section__swiper-navigation-left',
