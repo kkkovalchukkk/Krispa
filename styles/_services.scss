@@ -24,17 +24,31 @@
 
   .accordeon {
     padding: 24px;
+    max-width: 32%;
+
+    &__content {
+      max-height: unset;
+    }
 
     &-list {
-      grid-template-columns: 1fr 1fr 1fr;
-      row-gap: 15px;
-      column-gap: 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      max-height: 1248px;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: start;
       @media (max-width: 1024px) {
         gap: 20px;
         grid-template-columns: 1fr 1fr;
       }
+      @media (max-width: 960px) {
+        max-height: 1742px;
+      }
       @media (max-width: 768px) {
-        grid-template-columns: 1fr;
+      }
+      @media (max-width: 625px) {
+        max-height: unset;
       }
     }
     &__heading-group {
@@ -76,8 +90,11 @@
     @media (max-width: 1024px) {
       padding: 32px;
     }
-    @media (max-width: 768px) {
-      padding: 12px 20px;
+    @media (max-width: 960px) {
+      max-width: 48%;
+    }
+    @media (max-width: 625px) {
+      max-width: 100%;
     }
   }
 
