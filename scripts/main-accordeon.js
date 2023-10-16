@@ -4,30 +4,20 @@ window.addEventListener('DOMContentLoaded', () => {
     '.accordeon__inner-accordeon'
   );
 
-  const categorySectionEl = document.querySelector(
+  const categorySidebarEl = document.querySelector(
     '.category-section__sidebar'
   );
-  const firstAccordeonEl = categorySectionEl?.querySelector('.accordeon');
-  const firstAccordeonContentEl = firstAccordeonEl?.querySelector(
+  const activeAccordeonEl =
+    categorySidebarEl?.querySelector('.accordeon--active');
+  const activeAccordeonContentEl = activeAccordeonEl?.querySelector(
     '.accordeon__content'
   );
-  const firstAccordeonInnerEl = firstAccordeonContentEl?.querySelector(
-    '.accordeon__inner-accordeon'
+  const activeInnerAccordeonEl = activeAccordeonContentEl?.querySelector(
+    '.accordeon__inner-accordeon--active'
   );
-  const firstAccordeonInnerContentEl = firstAccordeonInnerEl?.querySelector(
+  const InnerAccordeonContentEl = activeInnerAccordeonEl?.querySelector(
     '.accordeon__inner-accordeon-content'
   );
-
-  firstAccordeonInnerEl &&
-    firstAccordeonInnerEl.classList.add('accordeon__inner-accordeon--active');
-  firstAccordeonInnerContentEl &&
-    (firstAccordeonInnerContentEl.style.maxHeight =
-      firstAccordeonInnerContentEl.scrollHeight + 500 + 'px');
-
-  firstAccordeonEl && firstAccordeonEl.classList.add('accordeon--active');
-  firstAccordeonContentEl &&
-    (firstAccordeonContentEl.style.maxHeight =
-      firstAccordeonContentEl.scrollHeight + 500 + 'px');
 
   accordeonsEls.forEach((acc) => {
     acc.addEventListener('click', (e) => {
@@ -74,4 +64,11 @@ window.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+  activeAccordeonContentEl &&
+    (activeAccordeonContentEl.style.maxHeight =
+      activeAccordeonContentEl.scrollHeight + 500 + 'px');
+
+  InnerAccordeonContentEl &&
+    (InnerAccordeonContentEl.style.maxHeight =
+      InnerAccordeonContentEl.scrollHeight + 500 + 'px');
 });
