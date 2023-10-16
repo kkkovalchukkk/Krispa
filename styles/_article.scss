@@ -126,7 +126,7 @@
     box-shadow: 1.5px 1.5px 7.5px 0px rgba(0, 0, 0, 0.04);
   }
 
-  &__content-middle-text {
+  p {
     width: 100%;
     color: $darkGray;
     leading-trim: both;
@@ -157,13 +157,49 @@
     gap: 18px;
   }
 
-  &__content-middle-list-item-heading {
-    width: 1005px;
+  h3 {
+    width: 100%;
     color: $black;
     leading-trim: both;
     text-edge: cap;
     font-family: $mainFont;
     font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%; /* 19.8px */
+    letter-spacing: -0.18px;
+  }
+  h4 {
+    width: 100%;
+    color: $black;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: $mainFont;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%; /* 19.8px */
+    letter-spacing: -0.18px;
+  }
+  h5 {
+    width: 100%;
+    color: $black;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: $mainFont;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%; /* 19.8px */
+    letter-spacing: -0.18px;
+  }
+  h6 {
+    width: 100%;
+    color: $black;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: $mainFont;
+    font-size: 12px;
     font-style: normal;
     font-weight: 500;
     line-height: 110%; /* 19.8px */
@@ -202,7 +238,7 @@
     padding-left: 12px;
   }
 
-  &__content-middle-list-item-sublist-item {
+  li li {
     padding-left: 12px;
     position: relative;
     color: $darkGray;
@@ -242,7 +278,7 @@
     padding-left: 12px;
   }
 
-  &__content-middle-list-item-ordered-list-item {
+  ol li {
     color: $darkGray;
     leading-trim: both;
     text-edge: cap;

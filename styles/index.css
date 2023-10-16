@@ -4482,7 +4482,7 @@ input[type=checkbox].invalid + .form__checkbox {
 .accordeon__inner-accordeon--active .accordeon__inner-accordeon-content {
   margin-top: 14px;
 }
-.accordeon__inner-accordeon--active .accordeon__chevron {
+.accordeon__inner-accordeon--active .accordeon__inner-accordeon-chevron {
   transform: rotate(180deg);
 }
 .accordeon__inner-accordeon--active .accordeon__inner-accordeon-header path {
@@ -4504,6 +4504,9 @@ input[type=checkbox].invalid + .form__checkbox {
   justify-content: start;
   gap: 14px;
   overflow: hidden;
+  transition: 0.23s;
+}
+.accordeon__inner-accordeon-chevron {
   transition: 0.23s;
 }
 .accordeon__inner-accordeon-link {
@@ -7699,7 +7702,7 @@ input[type=checkbox].invalid + .form__checkbox {
   background: #fff;
   box-shadow: 1.5px 1.5px 7.5px 0px rgba(0, 0, 0, 0.04);
 }
-.article-section__content-middle-text {
+.article-section p {
   width: 100%;
   color: #999999;
   leading-trim: both;
@@ -7727,13 +7730,49 @@ input[type=checkbox].invalid + .form__checkbox {
   justify-content: start;
   gap: 18px;
 }
-.article-section__content-middle-list-item-heading {
-  width: 1005px;
+.article-section h3 {
+  width: 100%;
   color: #13151c;
   leading-trim: both;
   text-edge: cap;
   font-family: "Lato", sans-serif;
   font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%; /* 19.8px */
+  letter-spacing: -0.18px;
+}
+.article-section h4 {
+  width: 100%;
+  color: #13151c;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%; /* 19.8px */
+  letter-spacing: -0.18px;
+}
+.article-section h5 {
+  width: 100%;
+  color: #13151c;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%; /* 19.8px */
+  letter-spacing: -0.18px;
+}
+.article-section h6 {
+  width: 100%;
+  color: #13151c;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
   font-style: normal;
   font-weight: 500;
   line-height: 110%; /* 19.8px */
@@ -7768,7 +7807,7 @@ input[type=checkbox].invalid + .form__checkbox {
   justify-content: start;
   padding-left: 12px;
 }
-.article-section__content-middle-list-item-sublist-item {
+.article-section li li {
   padding-left: 12px;
   position: relative;
   color: #999999;
@@ -7781,7 +7820,7 @@ input[type=checkbox].invalid + .form__checkbox {
   line-height: 140%; /* 21px */
   letter-spacing: -0.15px;
 }
-.article-section__content-middle-list-item-sublist-item::after {
+.article-section li li::after {
   content: "·";
   position: absolute;
   left: 0;
@@ -7805,7 +7844,7 @@ input[type=checkbox].invalid + .form__checkbox {
   gap: 6px;
   padding-left: 12px;
 }
-.article-section__content-middle-list-item-ordered-list-item {
+.article-section ol li {
   color: #999999;
   leading-trim: both;
   text-edge: cap;

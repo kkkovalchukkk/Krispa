@@ -83,7 +83,7 @@
       .accordeon__inner-accordeon-content {
         margin-top: 14px;
       }
-      .accordeon__chevron {
+      .accordeon__inner-accordeon-chevron {
         transform: rotate(180deg);
       }
       color: $blue;
@@ -111,6 +111,10 @@
     justify-content: start;
     gap: 14px;
     overflow: hidden;
+    transition: $defaultTransitionTime;
+  }
+
+  &__inner-accordeon-chevron {
     transition: $defaultTransitionTime;
   }
 

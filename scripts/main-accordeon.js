@@ -4,6 +4,31 @@ window.addEventListener('DOMContentLoaded', () => {
     '.accordeon__inner-accordeon'
   );
 
+  const categorySectionEl = document.querySelector(
+    '.category-section__sidebar'
+  );
+  const firstAccordeonEl = categorySectionEl?.querySelector('.accordeon');
+  const firstAccordeonContentEl = firstAccordeonEl?.querySelector(
+    '.accordeon__content'
+  );
+  const firstAccordeonInnerEl = firstAccordeonContentEl?.querySelector(
+    '.accordeon__inner-accordeon'
+  );
+  const firstAccordeonInnerContentEl = firstAccordeonInnerEl?.querySelector(
+    '.accordeon__inner-accordeon-content'
+  );
+
+  firstAccordeonInnerEl &&
+    firstAccordeonInnerEl.classList.add('accordeon__inner-accordeon--active');
+  firstAccordeonInnerContentEl &&
+    (firstAccordeonInnerContentEl.style.maxHeight =
+      firstAccordeonInnerContentEl.scrollHeight + 500 + 'px');
+
+  firstAccordeonEl && firstAccordeonEl.classList.add('accordeon--active');
+  firstAccordeonContentEl &&
+    (firstAccordeonContentEl.style.maxHeight =
+      firstAccordeonContentEl.scrollHeight + 500 + 'px');
+
   accordeonsEls.forEach((acc) => {
     acc.addEventListener('click', (e) => {
       const content = acc.querySelector('.accordeon__content');
