@@ -27,8 +27,8 @@
   &__breadcrumbs {
     gap: 7.5px;
     .breadcrumbs__link {
-      padding-left: 12.5px;
-      font-size: 10.5px;
+      // padding-left: 12.5px;
+      font-size: 14px;
     }
   }
 
@@ -94,7 +94,7 @@
     leading-trim: both;
     text-edge: cap;
     font-family: $mainFont;
-    font-size: 12px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 108%; /* 12.96px */
@@ -126,7 +126,7 @@
     box-shadow: 1.5px 1.5px 7.5px 0px rgba(0, 0, 0, 0.04);
   }
 
-  p {
+  &__content-middle-text {
     width: 100%;
     color: $darkGray;
     leading-trim: both;
@@ -157,7 +157,7 @@
     gap: 18px;
   }
 
-  h3 {
+  &__content-middle-list-item-heading {
     width: 100%;
     color: $black;
     leading-trim: both;
@@ -169,42 +169,42 @@
     line-height: 110%; /* 19.8px */
     letter-spacing: -0.18px;
   }
-  h4 {
-    width: 100%;
-    color: $black;
-    leading-trim: both;
-    text-edge: cap;
-    font-family: $mainFont;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 110%; /* 19.8px */
-    letter-spacing: -0.18px;
-  }
-  h5 {
-    width: 100%;
-    color: $black;
-    leading-trim: both;
-    text-edge: cap;
-    font-family: $mainFont;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 110%; /* 19.8px */
-    letter-spacing: -0.18px;
-  }
-  h6 {
-    width: 100%;
-    color: $black;
-    leading-trim: both;
-    text-edge: cap;
-    font-family: $mainFont;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 110%; /* 19.8px */
-    letter-spacing: -0.18px;
-  }
+  // h4 {
+  //   width: 100%;
+  //   color: $black;
+  //   leading-trim: both;
+  //   text-edge: cap;
+  //   font-family: $mainFont;
+  //   font-size: 16px;
+  //   font-style: normal;
+  //   font-weight: 500;
+  //   line-height: 110%; /* 19.8px */
+  //   letter-spacing: -0.18px;
+  // }
+  // h5 {
+  //   width: 100%;
+  //   color: $black;
+  //   leading-trim: both;
+  //   text-edge: cap;
+  //   font-family: $mainFont;
+  //   font-size: 14px;
+  //   font-style: normal;
+  //   font-weight: 500;
+  //   line-height: 110%; /* 19.8px */
+  //   letter-spacing: -0.18px;
+  // }
+  // h6 {
+  //   width: 100%;
+  //   color: $black;
+  //   leading-trim: both;
+  //   text-edge: cap;
+  //   font-family: $mainFont;
+  //   font-size: 12px;
+  //   font-style: normal;
+  //   font-weight: 500;
+  //   line-height: 110%; /* 19.8px */
+  //   letter-spacing: -0.18px;
+  // }
 
   &__content-middle-list-item-text-content {
     width: 100%;
@@ -238,7 +238,7 @@
     padding-left: 12px;
   }
 
-  li li {
+  &__content-middle-list-item-sublist-item {
     padding-left: 12px;
     position: relative;
     color: $darkGray;
@@ -361,6 +361,11 @@
     display: flex;
     align-items: center;
     gap: 16px;
+    &:hover {
+      .article-section__profile-list-item-value {
+        color: $blue;
+      }
+    }
   }
   &__profile-body {
     display: flex;

@@ -137,10 +137,6 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: start;
-    border-radius: 18px;
-    border: 0.75px solid $gray;
-    background: $white;
-    box-shadow: 1.5px 1.5px 7.5px 0px rgba(0, 0, 0, 0.04);
   }
 
   &__list-card-date {
@@ -348,7 +344,7 @@
         height: 220px;
       }
       .all-reviews-section__heading {
-        margin-bottom: 32px;
+        margin-bottom: 32px !important;
       }
       .all-reviews-section__date {
         margin-bottom: 64px;

@@ -15,7 +15,8 @@
     width: 100%;
     display: grid;
     grid-template-columns: repeat(4, 25%);
-    grid-template-rows: 354px;
+    grid-template-rows: 1fr;
+    // grid-template-rows: 354px;
     column-gap: 15px;
     row-gap: 30px;
     @media (max-width: 1024px) {
@@ -66,7 +67,7 @@
 
   &__card-text {
     width: 100%;
-    margin-bottom: auto;
+    margin-bottom: 16px;
     color: $darkGray;
     leading-trim: both;
     text-edge: cap;

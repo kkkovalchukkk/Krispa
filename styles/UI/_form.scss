@@ -35,7 +35,7 @@
     leading-trim: both;
     text-edge: cap;
     font-family: $mainFont;
-    font-size: 15px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 110%; /* 16.5px */
@@ -71,7 +71,7 @@
     }
     &:focus {
       outline: none;
-      border: 1px solid $orange;
+      border: 1px solid $blue;
     }
     &::placeholder {
       color: $darkGray;

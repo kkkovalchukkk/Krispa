@@ -22,7 +22,7 @@
     height: auto;
     display: flex;
     flex-direction: column-reverse;
-    gap: 16.4px;
+    gap: 8px;
     align-items: flex-start;
     justify-content: start;
     &__map {
@@ -90,27 +90,32 @@
 
 @media (max-width: 522px) {
   .company-section__box-image {
-    top: 88px;
+    // top: 88px;
   }
 }
 @media (max-width: 485px) {
+  .company-section__box {
+    margin-top: 246px;
+  }
   .company-section__box-image {
     height: 250px;
+    top: -266px;
   }
   .company-section__heading {
-    margin-bottom: 290px;
+    // margin-bottom: 290px;
   }
 }
 
 @media (max-width: 375px) {
   .company-section__box-image {
     height: 220px;
+    top: -236px;
   }
   .company-section__heading {
-    margin-bottom: 256px;
+    // margin-bottom: 256px;
   }
-  .company-section__box-image {
-    top: 100px;
+  .company-section__box {
+    margin-top: 215px;
   }
   .company-section__box-text-content {
     gap: 16px;

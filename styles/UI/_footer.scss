@@ -250,18 +250,18 @@
       gap: 16px;
     }
     &__middle-footer-wrapper {
-      flex-direction: row-reverse;
-      gap: 50px;
-      // max-width: 894px;
-      flex-wrap: wrap;
+      // flex-direction: row-reverse;
+      // gap: 50px;
+      // // max-width: 894px;
+      // flex-wrap: wrap;
     }
 
     &__middle-footer-col--tels {
     }
 
     &__middle-footer-col--info {
-      flex-direction: row;
-      gap: 51px;
+      // flex-direction: row;
+      // gap: 51px;
     }
 
     // &__btn {
@@ -273,6 +273,7 @@
   @media (max-width: 1170px) {
     &__middle-footer-wrapper {
       display: grid;
+      gap: 32px;
       grid-template-columns: 1fr 1fr;
     }
 
