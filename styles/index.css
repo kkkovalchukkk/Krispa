@@ -2451,9 +2451,19 @@ input[type=checkbox]:checked + .form__checkbox {
   letter-spacing: -0.18px;
   margin-bottom: 23px;
 }
-.review-card__text {
+.review-card__text-content {
   width: 100%;
+  overflow: hidden;
+  position: relative;
   margin-bottom: 24px;
+}
+.review-card__text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5; /* Ограничение по числу строк */
+  -webkit-box-orient: vertical;
+  width: 100%;
   max-width: 412px;
   color: #999999;
   leading-trim: both;

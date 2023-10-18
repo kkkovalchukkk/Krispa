@@ -2389,10 +2389,20 @@ input[type='checkbox']:checked + .form__checkbox {
     letter-spacing: -0.18px;
     margin-bottom: 23px;
   }
+  &__text-content {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 24px;
+  }
 
   &__text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5; /* Ограничение по числу строк */
+    -webkit-box-orient: vertical;
     width: 100%;
-    margin-bottom: 24px;
     max-width: 412px;
     color: $darkGray;
     leading-trim: both;
