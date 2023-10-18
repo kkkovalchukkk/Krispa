@@ -5890,6 +5890,7 @@ input[type=checkbox].invalid + .form__checkbox {
   max-height: unset;
 }
 .center-services-section .accordeon-list {
+  align-content: start;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
