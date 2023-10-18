@@ -786,7 +786,8 @@ input[type=checkbox]:checked + .form__checkbox {
 }
 .services-section__page-box {
   width: 100%;
-  height: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
   border-radius: 24px;
   background: #fff;
   box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.04);
@@ -804,9 +805,6 @@ input[type=checkbox]:checked + .form__checkbox {
 }
 .services-section__page-box--list {
   position: relative;
-  max-height: 477px;
-  padding: 36px;
-  padding-right: 8px;
 }
 .services-section__services-list {
   margin-bottom: 20px;
@@ -870,7 +868,6 @@ input[type=checkbox]:checked + .form__checkbox {
   display: flex;
   width: 100%;
   max-width: 89%;
-  max-height: 372px;
   overflow-y: auto;
   flex-direction: column;
   align-items: flex-start;
@@ -891,6 +888,9 @@ input[type=checkbox]:checked + .form__checkbox {
   background: none;
 }
 .services-section__page-box-list--active {
+  position: static;
+  padding: 36px;
+  padding-right: 8px;
   visibility: visible;
   opacity: 1;
   transform: translateX(0%);
