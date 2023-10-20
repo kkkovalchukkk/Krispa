@@ -2764,9 +2764,9 @@ input[type='checkbox']:checked + .form__checkbox {
   }
 
   &__text {
+    @extend .review-card__text;
     width: 100%;
     // margin-bottom: 16px;
-    margin-bottom: auto;
 
     color: $darkGray;
     leading-trim: both;
@@ -2777,6 +2777,11 @@ input[type='checkbox']:checked + .form__checkbox {
     font-weight: 400;
     line-height: 110%; /* 22px */
     letter-spacing: -0.2px;
+    -webkit-line-clamp: 4;
+    &-content {
+      @extend .review-card__text-content;
+      margin-bottom: auto;
+    }
   }
 
   &__link {

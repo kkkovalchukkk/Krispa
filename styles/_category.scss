@@ -119,15 +119,15 @@
   }
 
   &__text-list-item-heading {
-    color: $black;
-    leading-trim: both;
-    text-edge: cap;
-    font-family: $mainFont;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 110%;
-    letter-spacing: -0.18px;
+    // color: $black;
+    // leading-trim: both;
+    // text-edge: cap;
+    // font-family: $mainFont;
+    // font-size: 18px;
+    // font-style: normal;
+    // font-weight: 500;
+    // line-height: 110%;
+    // letter-spacing: -0.18px;
   }
 
   &__text-list-item-text-content {
@@ -142,15 +142,6 @@
   }
 
   &__text-list-item-text {
-    color: $darkGray;
-    leading-trim: both;
-    text-edge: cap;
-    font-family: $mainFont;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 140%; /* 21px */
-    letter-spacing: -0.15px;
   }
 
   &__img {
@@ -243,13 +234,39 @@
     font-style: normal;
     font-weight: 500;
     line-height: 110%; /* 26.4px */
+    
     letter-spacing: -0.24px;
   }
 
   &__text-content {
-    margin-top: 17px;
     &--item {
       margin: 0 !important;
+    }
+
+    h2 {
+      margin-bottom: 18px;
+      color: $black;
+      leading-trim: both;
+      text-edge: cap;
+      font-family: $mainFont;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 110%;
+      letter-spacing: -0.18px;
+    }
+
+    p {
+      margin-bottom: 24px;
+      color: $darkGray;
+      leading-trim: both;
+      text-edge: cap;
+      font-family: $mainFont;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%; /* 21px */
+      letter-spacing: -0.15px;
     }
   }
 
