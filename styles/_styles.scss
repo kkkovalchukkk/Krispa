@@ -144,6 +144,24 @@ body.no-scroll {
 }
 .navigation-section {
   margin: 15px 0px;
+  transition: $defaultTransitionTime;
+
+  &.fixed {
+    margin: 0;
+    position: sticky;
+    left: 0;
+    top: 84.7px;
+    z-index: 999;
+    .wrapper {
+      max-width: 1183px;
+      border-top: 1px solid $gray;
+    }
+    .main-nav {
+      border-radius: 0;
+      border-bottom-left-radius: 18px;
+      border-bottom-right-radius: 18px;
+    }
+  }
   @media (max-width: 1024px) {
     margin: 10px 0px;
     margin-bottom: 32px;

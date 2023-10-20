@@ -5,6 +5,24 @@ window.addEventListener('DOMContentLoaded', () => {
 
   const mainNav = document.querySelector('.main-nav');
 
+  let previousPosition =
+    window.pageYOffset || document.documentElement.scrollTop;
+
+  window.onscroll = function () {
+    let currentPosition =
+      window.pageYOffset || document.documentElement.scrollTop;
+    console.log(currentPosition);
+
+    if (currentPosition >= 130) {
+      document.querySelector('.header').classList.add('fixed');
+      document.querySelector('.navigation-section').classList.add('fixed');
+    } else {
+      document.querySelector('.header').classList.remove('fixed');
+      document.querySelector('.navigation-section').classList.remove('fixed');
+    }
+    previousPosition = currentPosition;
+  };
+
   mainNavListItemSubmenu.forEach((item) => {
     item.addEventListener('mouseenter', () => {
       item.classList.add('main-nav-list-item--active');
