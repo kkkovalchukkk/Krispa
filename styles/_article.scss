@@ -119,24 +119,22 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: start;
-    gap: 45px;
     padding: 36px;
     border-radius: 18px;
     background: $white;
     box-shadow: 1.5px 1.5px 7.5px 0px rgba(0, 0, 0, 0.04);
-  }
-
-  &__content-middle-text {
-    width: 100%;
-    color: $darkGray;
-    leading-trim: both;
-    text-edge: cap;
-    font-family: $mainFont;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 140%; /* 21px */
-    letter-spacing: -0.15px;
+    p {
+      margin-bottom: 16px;
+      color: $darkGray;
+      leading-trim: both;
+      text-edge: cap;
+      font-family: $mainFont;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%; /* 21px */
+      letter-spacing: -0.15px;
+    }
   }
 
   &__content-middle-list {
@@ -154,16 +152,43 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: start;
-    gap: 18px;
+    // gap: 18px;
   }
 
-  &__content-middle-list-item-heading {
+  h3 {
     width: 100%;
+    margin-bottom: 16px;
     color: $black;
     leading-trim: both;
     text-edge: cap;
     font-family: $mainFont;
     font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%; /* 19.8px */
+    letter-spacing: -0.18px;
+  }
+  h3 {
+    width: 100%;
+    margin-bottom: 16px;
+    color: $black;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: $mainFont;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%; /* 19.8px */
+    letter-spacing: -0.18px;
+  }
+  h4 {
+    width: 100%;
+    margin-bottom: 16px;
+    color: $black;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: $mainFont;
+    font-size: 15px;
     font-style: normal;
     font-weight: 500;
     line-height: 110%; /* 19.8px */
@@ -212,7 +237,7 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: start;
-    gap: 2px;
+    // gap: 2px;
   }
 
   &__content-middle-list-item-text {
@@ -228,7 +253,9 @@
     letter-spacing: -0.15px;
   }
 
-  &__content-middle-list-item-sublist {
+  &__content-middle-list-item-sublist,
+  ul {
+    margin-bottom: 24px;
     width: 100%;
     display: flex;
     gap: 6px;
@@ -238,7 +265,8 @@
     padding-left: 12px;
   }
 
-  &__content-middle-list-item-sublist-item {
+  &__content-middle-list-item-sublist-item,
+  ul li {
     padding-left: 12px;
     position: relative;
     color: $darkGray;
@@ -268,17 +296,20 @@
     }
   }
 
-  &__content-middle-list-item-ordered-list {
+  ol {
     width: 100%;
+    margin-bottom: 24px;
+    list-style: auto;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: start;
-    gap: 6px;
-    padding-left: 12px;
+    // gap: 6px;
+    padding-left: 25px;
   }
 
   ol li {
+    padding: 0;
     color: $darkGray;
     leading-trim: both;
     text-edge: cap;
@@ -288,6 +319,9 @@
     font-weight: 400;
     line-height: 140%; /* 21px */
     letter-spacing: -0.15px;
+    &::after {
+      display: none;
+    }
   }
 
   &__content-middle-subtext {
