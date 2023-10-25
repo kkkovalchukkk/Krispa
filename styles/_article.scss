@@ -273,22 +273,6 @@
 		font-weight: 400;
 		line-height: 140%; /* 21px */
 		letter-spacing: -0.15px;
-		&::after {
-			content: '·';
-			position: absolute;
-			left: 0;
-			top: -6px;
-
-			color: $darkGray;
-			leading-trim: both;
-			text-edge: cap;
-			font-family: $mainFont;
-			font-size: 24px;
-			font-style: normal;
-			font-weight: 400;
-			line-height: 140%; /* 21px */
-			letter-spacing: -0.15px;
-		}
 	}
 
 	ol {
