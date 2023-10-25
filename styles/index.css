@@ -7900,7 +7900,7 @@ input[type=checkbox].invalid + .form__checkbox {
   gap: 16px;
   flex-direction: column;
   align-items: flex-start;
-  flex-direction: initial;
+  flex-direction: inherit;
   justify-content: start;
 }
 .article-section__content-middle-list-item-sublist-item, .category-section__text-content ul li, .category-section__text-content ol li,
