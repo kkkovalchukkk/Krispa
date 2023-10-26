@@ -3604,6 +3604,13 @@ input[type=checkbox]:checked + .form__checkbox {
   .header__wrapper {
     padding: 32px;
   }
+  .header__burger-btn {
+    display: initial;
+    margin-left: 16px;
+    border: none;
+    background: none;
+    padding: 0;
+  }
   .header__tel-group {
     display: none;
   }
@@ -3629,13 +3636,6 @@ input[type=checkbox]:checked + .form__checkbox {
   }
   .header__company-info {
     display: none;
-  }
-  .header__burger-btn {
-    display: initial;
-    margin-left: 16px;
-    border: none;
-    background: none;
-    padding: 0;
   }
 }
 @media (max-width: 768px) {
