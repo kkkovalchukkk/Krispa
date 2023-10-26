@@ -3854,14 +3854,20 @@ input[type=checkbox]:checked + .form__checkbox {
   letter-spacing: -0.16px;
 }
 .main-nav-list-item__submenu-col-nav {
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: end;
   justify-content: start;
-  gap: 16.55px;
+  gap: 16px;
+}
+.main-nav-list-item__submenu-col-nav a {
+  font-size: 18px;
+  font-weight: 400;
 }
 .main-nav-list-item__submenu-col-nav-link {
   max-width: 320px;
+  text-align: end;
   color: #999999;
   leading-trim: both;
   text-edge: cap;
@@ -3895,6 +3901,10 @@ input[type=checkbox]:checked + .form__checkbox {
     line-height: 110%;
     letter-spacing: -0.16px;
   }
+}
+
+.main-nav-list-item-addedHeight {
+  max-height: 400px;
 }
 
 .footer {
@@ -4786,7 +4796,59 @@ input[type=checkbox].invalid + .form__checkbox {
 .mobile-menu__nav-block {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
+  align-items: end;
   gap: 8px;
+}
+.mobile-menu__nav-block--submenu--btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  transition: 0.23s;
+}
+.mobile-menu__nav-block--submenu__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 18px;
+}
+.mobile-menu__nav-block--submenu__list li div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+.mobile-menu__nav-block--submenu__list li div p {
+  color: #13151c;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%;
+  letter-spacing: -0.2px;
+}
+.mobile-menu__nav-block--submenu__li {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.mobile-menu__nav-block--submenu__li-nav {
+  display: none;
+}
+.mobile-menu__nav-block--submenu__li-showedContent {
+  display: flex;
+  align-items: end;
+}
+.mobile-menu__nav-block--submenu__li-link {
+  color: #0069a3;
+}
+.mobile-menu__nav-block--submenu--nonDisplayed {
+  display: none;
+}
+.mobile-menu__nav-block--submenu--block-active {
+  display: block;
 }
 .mobile-menu__nav-link {
   color: #13151c;

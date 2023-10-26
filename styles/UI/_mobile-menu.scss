@@ -67,7 +67,69 @@
 		&-block {
 			display: flex;
 			justify-content: space-between;
+			flex-direction: column;
+			align-items: end;
 			gap: 8px;
+
+			&--submenu {
+				&--btn {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					gap: 8px;
+					transition: 0.23s;
+				}
+
+				&__list {
+					list-style: none;
+					display: flex;
+					flex-direction: column;
+					align-items: end;
+					gap: 18px;
+
+					li {
+						div {
+							display: flex;
+							justify-content: space-between;
+							align-items: center;
+							gap: 8px;
+							p {
+								color: $black;
+								font-family: 'Lato', sans-serif;
+								font-size: 20px;
+								font-style: normal;
+								font-weight: 500;
+								line-height: 110%;
+								letter-spacing: -0.2px;
+							}
+						}
+					}
+				}
+
+				&__li {
+					display: flex;
+					flex-direction: column;
+					align-items: end;
+
+					&-nav {
+						display: none;
+					}
+					&-showedContent {
+						display: flex;
+						align-items: end;
+					}
+					&-link {
+						color: $blue;
+					}
+				}
+
+				&--nonDisplayed {
+					display: none;
+				}
+				&--block-active {
+					display: block;
+				}
+			}
 		}
 	}
 
