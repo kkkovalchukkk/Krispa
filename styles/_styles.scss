@@ -2414,11 +2414,6 @@ input[type='checkbox']:checked + .form__checkbox {
 	}
 
 	&__text {
-		overflow: hidden;
-		text-overflow: ellipsis;
-		display: -webkit-box;
-		-webkit-line-clamp: 5; /* Ограничение по числу строк */
-		-webkit-box-orient: vertical;
 		width: 100%;
 		max-width: 412px;
 		color: $darkGray;
@@ -2738,11 +2733,12 @@ input[type='checkbox']:checked + .form__checkbox {
 
 .article-card {
 	width: 100%;
-	height: 373px;
+	height: auto;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
 	justify-content: start;
+
 	&__img-holder {
 		width: 100%;
 		height: 180px;
@@ -2775,18 +2771,11 @@ input[type='checkbox']:checked + .form__checkbox {
 		font-weight: 500;
 		line-height: 110%; /* 26.4px */
 		letter-spacing: -0.24px;
-
-		max-height: 15px;
-		white-space: nowrap;
-		overflow: hidden;
-		text-overflow: ellipsis;
 	}
 
 	&__text {
 		@extend .review-card__text;
 		width: 100%;
-		// margin-bottom: 16px;
-
 		color: $darkGray;
 		leading-trim: both;
 		text-edge: cap;
@@ -2805,6 +2794,7 @@ input[type='checkbox']:checked + .form__checkbox {
 
 	&__link {
 		margin-right: auto;
+		margin-top: 25px;
 	}
 
 	@media (max-width: 1024px) {
