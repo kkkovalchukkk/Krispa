@@ -2585,7 +2585,6 @@ input[type=checkbox]:checked + .form__checkbox {
 .team-section__swiper-slide {
   width: 100%;
   max-width: calc(25% - 20px);
-  height: 458px !important;
 }
 .team-section__mobile-btn {
   display: none;
