@@ -41,8 +41,11 @@ window.addEventListener('DOMContentLoaded', () => {
   })
 
   closeBurgerMenuBtn.addEventListener('click', () => {
-    mobileMenuSubmenu.classList.toggle('mobile-menu__nav-block--submenu--nonDisplayed')
-    mobileMenu.classList.remove('mobile-menu-unvisible')
+    if (!mobileMenuSubmenu.classList.contains('mobile-menu__nav-block--submenu--nonDisplayed')) {
+      mobileMenuSubmenu.classList.toggle('mobile-menu__nav-block--submenu--nonDisplayed')
+      mobileMenu.classList.remove('mobile-menu-unvisible')
+    }
+    mobileMenu.style.marginBottom = '100px'
   })
 
   mobileInnerContentBtns.forEach((btn, index) => {
