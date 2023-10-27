@@ -2811,6 +2811,10 @@ input[type=checkbox]:checked + .form__checkbox {
   font-weight: 500;
   line-height: 110%; /* 26.4px */
   letter-spacing: -0.24px;
+  max-height: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .article-card__text {
   width: 100%;
