@@ -1,33 +1,30 @@
 window.addEventListener('DOMContentLoaded', () => {
   const mainNavListItemSubmenu = document.querySelectorAll('.main-nav-list-item--submenu')
   const mainNav = document.querySelector('.main-nav')
+
   const closeBurgerMenuBtn = document.querySelector('.mobile-menu__close-btn')
-
-  let previousPosition =
-    window.pageYOffset || document.documentElement.scrollTop
-
   const mobileMenu = document.querySelector('.mobile-menu__nav')
   const mobileMenuSubmenu = document.querySelector('.mobile-menu-submenu')
   const mobileNavBtn = document.querySelector('.mobile-menu__nav-block--submenu--btn')
   const mobileNavBtnInner = document.querySelector('.mobile-menu__nav-block--submenu--nonDisplayed')
-  // const mobileNavBtnInnerBlocks = document.querySelectorAll('.mobile-menu__nav-block--submenu__li')
   const mobileBlocksInnerContent = document.querySelectorAll('.mobile-menu__nav-block--submenu__li-nav')
   const mobileInnerContentBtns = document.querySelectorAll('.mobile-menu__nav-block--submenu-btn')
   const backButton = document.querySelector('.back-button')
 
-  window.onscroll = function () {
-    let currentPosition =
-      window.pageYOffset || document.documentElement.scrollTop
-    console.log(currentPosition)
 
-    if (currentPosition >= 130) {
+  let isFixed = false
+  window.onscroll = function () {
+    let currentPosition = window.scrollY || document.documentElement.scrollTop
+
+    if (currentPosition >= 130 && !isFixed) {
       document.querySelector('.header').classList.add('fixed')
       document.querySelector('.navigation-section').classList.add('fixed')
-    } else {
+      isFixed = true
+    } else if (currentPosition < 130 && isFixed) {
       document.querySelector('.header').classList.remove('fixed')
       document.querySelector('.navigation-section').classList.remove('fixed')
+      isFixed = false
     }
-    previousPosition = currentPosition
   }
 
   mobileNavBtn.addEventListener('click', () => {

@@ -3419,7 +3419,7 @@ input[type=checkbox]:checked + .form__checkbox {
   transition: 0.23s;
 }
 .header.fixed {
-  position: sticky;
+  position: fixed;
   left: 0;
   top: 0;
   z-index: 999;
