@@ -35,17 +35,24 @@ window.addEventListener('DOMContentLoaded', () => {
     mobileNavBtnInner.classList.toggle('mobile-menu__nav-block--submenu--nonDisplayed')
   })
 
-  backButton.addEventListener('click', () => {
+  backButton?.addEventListener('click', () => {
     mobileMenuSubmenu.classList.toggle('mobile-menu__nav-block--submenu--nonDisplayed')
     mobileMenu.classList.remove('mobile-menu-unvisible')
   })
 
   closeBurgerMenuBtn.addEventListener('click', () => {
+    mobileBlocksInnerContent.forEach(content => {
+      if (content.classList.contains('mobile-menu__nav-block--submenu__li-nav-showedContent')) {
+        content.classList.remove('mobile-menu__nav-block--submenu__li-nav-showedContent')
+      }
+    })
+
     if (!mobileMenuSubmenu.classList.contains('mobile-menu__nav-block--submenu--nonDisplayed')) {
       mobileMenuSubmenu.classList.toggle('mobile-menu__nav-block--submenu--nonDisplayed')
       mobileMenu.classList.remove('mobile-menu-unvisible')
     }
     mobileMenu.style.marginBottom = '100px'
+
   })
 
   mobileInnerContentBtns.forEach((btn, index) => {
@@ -65,7 +72,7 @@ window.addEventListener('DOMContentLoaded', () => {
           } else {
             content.classList.add('mobile-menu__nav-block--submenu__li-nav-showedContent')
             content.classList.remove('mobile-menu__nav-block--submenu__li-nav')
-            mobileMenu.style.marginBottom = '-262px'
+            // mobileMenu.style.marginBottom = '-262px'
             if (svg) {
               svg.style.transform = 'rotate(180deg)'
               svg.style.transition = 'transform 0.23s'
