@@ -4664,7 +4664,6 @@ input[type=checkbox].invalid + .form__checkbox {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-left: 19px;
   gap: 1px;
 }
 .accordeon ul li {
@@ -4678,22 +4677,6 @@ input[type=checkbox].invalid + .form__checkbox {
   line-height: 110%; /* 16.5px */
   letter-spacing: -0.15px;
   position: relative;
-  padding-left: 20px;
-}
-.accordeon ul li::after {
-  content: "•";
-  position: absolute;
-  left: 0;
-  top: -4px;
-  color: #999999;
-  leading-trim: both;
-  text-edge: cap;
-  font-family: "Lato", sans-serif;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 110%; /* 22px */
-  letter-spacing: -0.2px;
 }
 @media (max-width: 1024px) {
   .accordeon {

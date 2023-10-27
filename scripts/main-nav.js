@@ -52,7 +52,6 @@ window.addEventListener('DOMContentLoaded', () => {
       mobileMenu.classList.remove('mobile-menu-unvisible')
     }
     mobileMenu.style.marginBottom = '100px'
-
   })
 
   mobileInnerContentBtns.forEach((btn, index) => {
