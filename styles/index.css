@@ -303,7 +303,6 @@ body.no-scroll {
 }
 .navigation-section {
   margin: 15px 0px;
-  transition: 0.23s;
 }
 .navigation-section.fixed {
   margin: 0;

@@ -2,6 +2,7 @@
 	width: 100%;
 	padding: 0px 16px;
 	transition: $defaultTransitionTime;
+
 	&.fixed {
 		// position: sticky;
 		position: fixed;
