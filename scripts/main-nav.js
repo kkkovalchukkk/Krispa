@@ -1,17 +1,19 @@
 window.addEventListener('DOMContentLoaded', () => {
   const mainNavListItemSubmenu = document.querySelectorAll('.main-nav-list-item--submenu')
   const mainNav = document.querySelector('.main-nav')
+  const closeBurgerMenuBtn = document.querySelector('.mobile-menu__close-btn')
 
   let previousPosition =
     window.pageYOffset || document.documentElement.scrollTop
 
   const mobileMenu = document.querySelector('.mobile-menu__nav')
+  const mobileMenuSubmenu = document.querySelector('.mobile-menu-submenu')
   const mobileNavBtn = document.querySelector('.mobile-menu__nav-block--submenu--btn')
   const mobileNavBtnInner = document.querySelector('.mobile-menu__nav-block--submenu--nonDisplayed')
-  const mobileNavBtnInnerBlocks = document.querySelectorAll('.mobile-menu__nav-block--submenu__li')
+  // const mobileNavBtnInnerBlocks = document.querySelectorAll('.mobile-menu__nav-block--submenu__li')
   const mobileBlocksInnerContent = document.querySelectorAll('.mobile-menu__nav-block--submenu__li-nav')
-  // const mobileBlocksInnerContentShowed = document.querySelectorAll('.mobile-menu__nav-block--submenu__li-nav-showedContent')
   const mobileInnerContentBtns = document.querySelectorAll('.mobile-menu__nav-block--submenu-btn')
+  const backButton = document.querySelector('.back-button')
 
   window.onscroll = function () {
     let currentPosition =
@@ -29,10 +31,18 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 
   mobileNavBtn.addEventListener('click', () => {
-    mobileMenu.style.visibility = 'hidden'
-    mobileMenu.style.opacity = 0
-    mobileMenu.style.marginBottom = '42px'
+    mobileMenu.classList.toggle('mobile-menu-unvisible')
     mobileNavBtnInner.classList.toggle('mobile-menu__nav-block--submenu--nonDisplayed')
+  })
+
+  backButton.addEventListener('click', () => {
+    mobileMenuSubmenu.classList.toggle('mobile-menu__nav-block--submenu--nonDisplayed')
+    mobileMenu.classList.remove('mobile-menu-unvisible')
+  })
+
+  closeBurgerMenuBtn.addEventListener('click', () => {
+    mobileMenuSubmenu.classList.toggle('mobile-menu__nav-block--submenu--nonDisplayed')
+    mobileMenu.classList.remove('mobile-menu-unvisible')
   })
 
   mobileInnerContentBtns.forEach((btn, index) => {

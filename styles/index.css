@@ -4780,6 +4780,40 @@ input[type=checkbox].invalid + .form__checkbox {
   top: 60px;
   left: 24px;
 }
+.mobile-menu-visible {
+  opacity: 1;
+  visibility: visible;
+}
+.mobile-menu-unvisible {
+  opacity: 0;
+  visibility: hidden;
+}
+.mobile-menu-submenu {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.mobile-menu-submenu .back-button {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  align-items: center;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.mobile-menu-submenu .back-button button {
+  color: #999999;
+  font-size: 17px;
+  font-weight: 500;
+  background: none;
+  border: none;
+}
+.mobile-menu-submenu .back-button svg {
+  transform: rotate(90deg);
+}
+.mobile-menu-submenu .back-button svg path {
+  fill: #999999;
+}
 .mobile-menu__close-btn {
   border: none;
   background: none;

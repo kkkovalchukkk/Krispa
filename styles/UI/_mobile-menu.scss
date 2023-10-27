@@ -31,7 +31,46 @@
 		@extend .header__logo-link;
 	}
 
+	&-visible {
+		opacity: 1;
+		visibility: visible;
+	}
+	&-unvisible {
+		opacity: 0;
+		visibility: hidden;
+	}
+
 	&__logo {
+	}
+	&-submenu {
+		display: flex;
+		flex-direction: column;
+		align-items: end;
+
+		.back-button {
+			display: flex;
+			justify-content: space-between;
+			flex-direction: row-reverse;
+			align-items: center;
+			margin-bottom: 10px;
+			cursor: pointer;
+
+			button {
+				color: $darkGray;
+				font-size: 17px;
+				font-weight: 500;
+				background: none;
+				border: none;
+			}
+
+			svg {
+				transform: rotate(90deg);
+
+				path {
+					fill: $darkGray;
+				}
+			}
+		}
 	}
 
 	&__logo-image {
