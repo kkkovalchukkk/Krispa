@@ -3,6 +3,7 @@ window.addEventListener('DOMContentLoaded', () => {
   const mainNav = document.querySelector('.main-nav')
 
   const sidebarAccordeonBlock = document.querySelector('.sidebar__accordion-list')
+  const allReviewsForm = document.querySelector('.all-reviews-section__form')
 
   const closeBurgerMenuBtn = document.querySelector('.mobile-menu__close-btn')
   const mobileMenu = document.querySelector('.mobile-menu__nav')
@@ -16,17 +17,18 @@ window.addEventListener('DOMContentLoaded', () => {
 
   let isFixed = false
   window.onscroll = function () {
-    let currentPosition = window.scrollY || document.documentElement.scrollTop
+    const currentPosition = window.scrollY || document.documentElement.scrollTop
+    const header = document.querySelector('.header')
+    const navigationSection = document.querySelector('.navigation-section')
+
 
     if (currentPosition >= 130 && !isFixed) {
-      sidebarAccordeonBlock.style.marginTop = '150px'
-      document.querySelector('.header').classList.add('fixed')
-      document.querySelector('.navigation-section').classList.add('fixed')
+      header.classList.add('fixed')
+      navigationSection.classList.add('fixed')
       isFixed = true
     } else if (currentPosition < 130 && isFixed) {
-      sidebarAccordeonBlock.style.marginTop = '0'
-      document.querySelector('.header').classList.remove('fixed')
-      document.querySelector('.navigation-section').classList.remove('fixed')
+      header.classList.remove('fixed')
+      navigationSection.classList.remove('fixed')
       isFixed = false
     }
   }

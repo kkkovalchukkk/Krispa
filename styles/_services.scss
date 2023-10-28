@@ -104,3 +104,20 @@
 		@extend .services-section__page-box-list-item-link;
 	}
 }
+
+.service-item__text {
+	ul,
+	ol {
+		display: flex;
+		flex-direction: column !important;
+		gap: 8px !important;
+	}
+
+	ul {
+		padding-left: 0 !important;
+
+		li {
+			padding-left: 15px !important;
+		}
+	}
+}
