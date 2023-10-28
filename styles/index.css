@@ -2813,6 +2813,7 @@ input[type=checkbox]:checked + .form__checkbox {
 }
 .article-card__text {
   width: 100%;
+  margin-bottom: 20px;
   color: #999999;
   leading-trim: both;
   text-edge: cap;
@@ -2825,10 +2826,9 @@ input[type=checkbox]:checked + .form__checkbox {
   -webkit-line-clamp: 4;
   display: block;
 }
-.article-card__text-content {
-  margin-bottom: auto;
-}
 .article-card__link {
+  position: absolute;
+  bottom: 0;
   margin-right: auto;
   margin-top: 25px;
 }
@@ -6121,6 +6121,10 @@ input[type=checkbox].invalid + .form__checkbox {
     max-width: 100%;
   }
 }
+.swiper-slide {
+  height: auto !important;
+}
+
 .win-section--category .swiper-slide {
   max-width: calc(50% - 20px);
 }

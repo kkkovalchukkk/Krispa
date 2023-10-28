@@ -2781,6 +2781,7 @@ input[type='checkbox']:checked + .form__checkbox {
 	&__text {
 		@extend .review-card__text;
 		width: 100%;
+		margin-bottom: 20px;
 		color: $darkGray;
 		leading-trim: both;
 		text-edge: cap;
@@ -2795,11 +2796,13 @@ input[type='checkbox']:checked + .form__checkbox {
 
 		&-content {
 			@extend .review-card__text-content;
-			margin-bottom: auto;
+			// margin-bottom: auto;
 		}
 	}
 
 	&__link {
+		position: absolute;
+		bottom: 0;
 		margin-right: auto;
 		margin-top: 25px;
 	}
