@@ -2,6 +2,8 @@ window.addEventListener('DOMContentLoaded', () => {
   const mainNavListItemSubmenu = document.querySelectorAll('.main-nav-list-item--submenu')
   const mainNav = document.querySelector('.main-nav')
 
+  const sidebarAccordeonBlock = document.querySelector('.sidebar__accordion-list')
+
   const closeBurgerMenuBtn = document.querySelector('.mobile-menu__close-btn')
   const mobileMenu = document.querySelector('.mobile-menu__nav')
   const mobileMenuSubmenu = document.querySelector('.mobile-menu-submenu')
@@ -17,10 +19,12 @@ window.addEventListener('DOMContentLoaded', () => {
     let currentPosition = window.scrollY || document.documentElement.scrollTop
 
     if (currentPosition >= 130 && !isFixed) {
+      sidebarAccordeonBlock.style.marginTop = '150px'
       document.querySelector('.header').classList.add('fixed')
       document.querySelector('.navigation-section').classList.add('fixed')
       isFixed = true
     } else if (currentPosition < 130 && isFixed) {
+      sidebarAccordeonBlock.style.marginTop = '0'
       document.querySelector('.header').classList.remove('fixed')
       document.querySelector('.navigation-section').classList.remove('fixed')
       isFixed = false
