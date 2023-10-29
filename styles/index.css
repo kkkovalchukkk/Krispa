@@ -7889,6 +7889,11 @@ input[type=checkbox].invalid + .form__checkbox {
 .mat-cat-section__sidebar {
   margin-top: 79px;
 }
+.mat-cat-section-card__link {
+  position: initial;
+  margin-right: auto;
+  margin-top: 0;
+}
 .mat-cat-section__link {
   margin-top: 40px;
   color: #fff;
