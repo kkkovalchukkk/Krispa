@@ -17,18 +17,30 @@ window.addEventListener('DOMContentLoaded', () => {
   const main = document.querySelector('.main')
   const sidebar = document.querySelector('.sidebar')
 
+
   let isFixed = false
   window.onscroll = function () {
     const currentPosition = window.scrollY || document.documentElement.scrollTop
     const header = document.querySelector('.header')
     const navigationSection = document.querySelector('.navigation-section')
 
+    const currentSection = document.querySelector('.navigation-section')
     const threshold = 130
     if (currentPosition >= threshold && !isFixed) {
       if (sidebar) {
         sidebar.style.top = '160px'
       }
-      main.style.marginTop = '260px'
+
+      // if (currentSection) {
+      //   const nextSection = currentSection.nextElementSibling
+
+      //   if (nextSection) {
+      //     nextSection.style.position = 'relative'
+      //     nextSection.style.top = '40px'
+      //   }
+      // }
+
+      main.style.marginTop = '240px'
       header.classList.add('fixed')
       navigationSection.classList.add('fixed')
       isFixed = true
@@ -36,12 +48,22 @@ window.addEventListener('DOMContentLoaded', () => {
       if (sidebar) {
         sidebar.style.top = '16px'
       }
+
+      // if (currentSection) {
+      //   const nextSection = currentSection.nextElementSibling
+
+      //   if (nextSection) {
+      //     nextSection.style.position = 'initial'
+      //   }
+      // }
+
       main.style.marginTop = '20px'
       header.classList.remove('fixed')
       navigationSection.classList.remove('fixed')
       isFixed = false
     }
   }
+
 
   mobileNavBtn.addEventListener('click', () => {
     mobileMenu.classList.toggle('mobile-menu-unvisible')
