@@ -6216,6 +6216,18 @@ input[type=checkbox].invalid + .form__checkbox {
   margin-top: 0 !important;
   padding: 0 157px 0 30px;
 }
+.category-section-accoredeon__text i {
+  font-size: 16px;
+  font-style: italic;
+}
+.category-section-accoredeon__text strong {
+  font-weight: 700;
+  font-size: 16.5px;
+}
+.category-section-accoredeon__text p {
+  display: flex;
+  flex-direction: column;
+}
 .category-section-accoredeon__text h2,
 .category-section-accoredeon__text h3,
 .category-section-accoredeon__text h4,
