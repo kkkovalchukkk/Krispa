@@ -91,9 +91,8 @@
 		}
 
 		ul {
-			position: relative;
-
 			li {
+				position: relative;
 				&::after {
 					content: '•';
 					position: absolute;

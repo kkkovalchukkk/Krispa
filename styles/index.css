@@ -7132,7 +7132,7 @@ input[type=checkbox].invalid + .form__checkbox {
 .specialist-section__text ol li {
   color: #999999;
 }
-.specialist-section__text ul {
+.specialist-section__text ul li {
   position: relative;
 }
 .specialist-section__text ul li::after {
