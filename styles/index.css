@@ -8038,7 +8038,7 @@ input[type=checkbox].invalid + .form__checkbox {
 .article-section__profile-list-item--time {
   padding-left: 24px;
   background-size: 12px;
-  background-image: url("../assets/svg/clock-icon.svg");
+  background-image: url("../assets/svg/article-clock.svg");
 }
 .article-section__content-middle {
   width: 100%;
