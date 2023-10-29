@@ -6,6 +6,18 @@
 		grid-template-columns: 74.68% 24.04%;
 	}
 
+	&__text {
+		ul {
+			flex-direction: column !important;
+			gap: 8px !important;
+			padding-left: 0;
+
+			li {
+				padding-left: 15px;
+			}
+		}
+	}
+
 	&__content {
 		width: 100%;
 		display: flex;
@@ -283,8 +295,7 @@
 		flex-direction: column;
 		align-items: flex-start;
 		justify-content: start;
-		// gap: 6px;
-		padding-left: 25px;
+		padding-left: 15px;
 	}
 
 	ol li {

@@ -7144,19 +7144,8 @@ input[type=checkbox].invalid + .form__checkbox {
   letter-spacing: -0.2px;
 }
 .specialist-section__text ol {
-  list-style: none;
-  counter-reset: my-counter;
-  padding-left: 0;
-}
-.specialist-section__text ol li {
-  position: relative;
-  counter-increment: my-counter;
-}
-.specialist-section__text ol li::before {
-  content: counter(my-counter) ".";
-  padding-right: 5px;
-  font-weight: bold;
-  color: #999999;
+  padding-left: 15px;
+  list-style: decimal;
 }
 .specialist-section__text h2,
 .specialist-section__text h3,
@@ -7916,6 +7905,14 @@ input[type=checkbox].invalid + .form__checkbox {
   gap: 15px;
   grid-template-columns: 74.68% 24.04%;
 }
+.article-section__text ul {
+  flex-direction: column !important;
+  gap: 8px !important;
+  padding-left: 0;
+}
+.article-section__text ul li {
+  padding-left: 15px;
+}
 .article-section__content {
   width: 100%;
   display: flex;
@@ -8135,7 +8132,7 @@ input[type=checkbox].invalid + .form__checkbox {
   flex-direction: column;
   align-items: flex-start;
   justify-content: start;
-  padding-left: 25px;
+  padding-left: 15px;
 }
 .article-section ol li {
   padding: 0;
