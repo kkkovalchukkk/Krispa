@@ -15,6 +15,7 @@ window.addEventListener('DOMContentLoaded', () => {
   const backButton = document.querySelector('.back-button')
 
   const main = document.querySelector('.main')
+  const sidebar = document.querySelector('.sidebar')
 
   let isFixed = false
   window.onscroll = function () {
@@ -24,11 +25,17 @@ window.addEventListener('DOMContentLoaded', () => {
 
     const threshold = 130
     if (currentPosition >= threshold && !isFixed) {
+      if (sidebar) {
+        sidebar.style.top = '160px'
+      }
       main.style.marginTop = '260px'
       header.classList.add('fixed')
       navigationSection.classList.add('fixed')
       isFixed = true
     } else if (currentPosition < threshold && isFixed) {
+      if (sidebar) {
+        sidebar.style.top = '16px'
+      }
       main.style.marginTop = '20px'
       header.classList.remove('fixed')
       navigationSection.classList.remove('fixed')

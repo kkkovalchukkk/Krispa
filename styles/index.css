@@ -7165,7 +7165,7 @@ input[type=checkbox].invalid + .form__checkbox {
 .specialist-section__text ul,
 .specialist-section__text ol {
   margin: 20px 0;
-  padding-left: 15px;
+  padding-left: 0;
   font-family: "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -7177,6 +7177,7 @@ input[type=checkbox].invalid + .form__checkbox {
   color: #999999;
 }
 .specialist-section__text ul li {
+  padding-left: 15px;
   position: relative;
 }
 .specialist-section__text ul li::after {
