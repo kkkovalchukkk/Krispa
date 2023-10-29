@@ -14,6 +14,7 @@ window.addEventListener('DOMContentLoaded', () => {
   const mobileInnerContentBtns = document.querySelectorAll('.mobile-menu__nav-block--submenu-btn')
   const backButton = document.querySelector('.back-button')
 
+  const main = document.querySelector('.main')
 
   let isFixed = false
   window.onscroll = function () {
@@ -21,12 +22,14 @@ window.addEventListener('DOMContentLoaded', () => {
     const header = document.querySelector('.header')
     const navigationSection = document.querySelector('.navigation-section')
 
-
-    if (currentPosition >= 130 && !isFixed) {
+    const threshold = 130
+    if (currentPosition >= threshold && !isFixed) {
+      main.style.marginTop = '260px'
       header.classList.add('fixed')
       navigationSection.classList.add('fixed')
       isFixed = true
-    } else if (currentPosition < 130 && isFixed) {
+    } else if (currentPosition < threshold && isFixed) {
+      main.style.marginTop = '20px'
       header.classList.remove('fixed')
       navigationSection.classList.remove('fixed')
       isFixed = false
