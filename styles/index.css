@@ -4894,6 +4894,18 @@ input[type=checkbox].invalid + .form__checkbox {
   justify-content: start;
   gap: 12px;
 }
+.mobile-menu__info-list-item .mobile-menu__btn {
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  background: #ee4b28;
+  background-image: url("../../assets/svg/tel-icon.svg");
+  background-repeat: no-repeat;
+  background-position: left 28.91px center;
+  background-size: 18px;
+  transition: 0.23s;
+  cursor: pointer;
+  transition: 0.23s;
+}
 .mobile-menu__company-time {
   width: -moz-fit-content;
   width: fit-content;
