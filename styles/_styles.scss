@@ -174,9 +174,10 @@ body.no-scroll {
 
 .promo-section {
 	margin-bottom: 90px;
+
 	&__wrapper {
 		display: grid;
-		grid-template-columns: 56.79% 41%;
+		grid-template-columns: 56.79% 41.5%;
 		grid-template-rows: 1fr;
 		gap: 20px;
 	}
