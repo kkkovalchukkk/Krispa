@@ -3516,7 +3516,7 @@ input[type=checkbox]:checked + .form__checkbox {
   padding-left: 27px;
   padding-top: 5px;
   padding-bottom: 2px;
-  background-image: url("../assets/svg/clock-icon.svg");
+  background-image: url("../../assets/svg/clock-icon.svg");
   background-repeat: no-repeat;
   background-position: left 0 center;
   background-size: 18px;
@@ -3527,7 +3527,7 @@ input[type=checkbox]:checked + .form__checkbox {
   letter-spacing: -0.151px;
 }
 .header__address, .mobile-menu__address, .footer__address {
-  background-image: url("../assets/svg/map-icon.svg");
+  background-image: url("../../assets/svg/map-icon.svg");
 }
 .header__tel-group {
   display: flex;
@@ -3540,7 +3540,7 @@ input[type=checkbox]:checked + .form__checkbox {
   color: #fff;
   font-family: "Lato", sans-serif;
   background: #ee4b28;
-  background-image: url("../assets/svg/tel-icon.svg");
+  background-image: url("../../assets/svg/tel-icon.svg");
   background-repeat: no-repeat;
   background-position: left 28.91px center;
   background-size: 18px;
@@ -3551,7 +3551,7 @@ input[type=checkbox]:checked + .form__checkbox {
 .header__btn:hover {
   outline: 1px solid #ee4b28;
   background-color: transparent;
-  background-image: url("../assets/svg/tel-icon-orange.svg");
+  background-image: url("../../assets/svg/tel-icon-orange.svg");
   color: #ee4b28;
 }
 .header__btn:active {
