@@ -1,199 +1,199 @@
 .form {
-  width: 100%;
-  height: fit-content;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border-radius: 24px;
-  background: $white;
-  box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.04);
-  padding: 52px 55px;
+	width: 100%;
+	height: fit-content;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-radius: 24px;
+	background: $white;
+	box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.04);
+	padding: 52px 55px;
 
-  &__heading {
-    width: 100%;
-    margin-bottom: 31px;
-    max-width: 475px;
-    color: $black;
-    text-align: center;
-    leading-trim: both;
-    text-edge: cap;
-    font-family: $mainFont;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 108%; /* 38.88px */
-    letter-spacing: -0.36px;
-  }
+	&__heading {
+		width: 100%;
+		margin-bottom: 31px;
+		max-width: 475px;
+		color: $black;
+		text-align: center;
+		leading-trim: both;
+		text-edge: cap;
+		font-family: $mainFont;
+		font-size: 36px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 108%; /* 38.88px */
+		letter-spacing: -0.36px;
+	}
 
-  &__text {
-    width: 100%;
-    max-width: 259px;
-    margin-bottom: 31px;
-    color: $black;
-    text-align: center;
-    leading-trim: both;
-    text-edge: cap;
-    font-family: $mainFont;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 110%; /* 16.5px */
-    letter-spacing: -0.15px;
-  }
+	&__text {
+		width: 100%;
+		max-width: 259px;
+		margin-bottom: 31px;
+		color: $black;
+		text-align: center;
+		leading-trim: both;
+		text-edge: cap;
+		font-family: $mainFont;
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 110%; /* 16.5px */
+		letter-spacing: -0.15px;
+	}
 
-  &__fieldset {
-    width: 100%;
-    margin-bottom: 15px;
-  }
+	&__fieldset {
+		width: 100%;
+		margin-bottom: 15px;
+	}
 
-  &__input {
-    width: 100%;
-    height: 47px;
-    padding: 18px 24px;
-    border-radius: 132.78px;
-    border: 1.4px solid $darkGray;
-    background: $white;
+	&__input {
+		width: 100%;
+		height: 47px;
+		padding: 18px 24px;
+		border-radius: 132.78px;
+		border: 1.4px solid $darkGray;
+		background: $white;
 
-    leading-trim: both;
-    text-edge: cap;
-    font-family: Lato;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 110%; /* 22px */
-    letter-spacing: -0.2px;
-    color: $black;
-    transition: $defaultTransitionTime;
-    &.invalid {
-      border: 1px solid red;
-      box-shadow: 0px 0px 5px #ff00004a;
-    }
-    &:focus {
-      outline: none;
-      border: 1px solid $blue;
-    }
-    &::placeholder {
-      color: $darkGray;
-    }
-  }
+		leading-trim: both;
+		text-edge: cap;
+		font-family: Lato;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 110%; /* 22px */
+		letter-spacing: -0.2px;
+		color: $black;
+		transition: $defaultTransitionTime;
+		&.invalid {
+			border: 1px solid red;
+			box-shadow: 0px 0px 5px #ff00004a;
+		}
+		&:focus {
+			outline: none;
+			border: 1px solid $blue;
+		}
+		&::placeholder {
+			color: $darkGray;
+		}
+	}
 
-  &__label {
-    width: 100%;
-    cursor: pointer;
-  }
+	&__label {
+		width: 100%;
+		cursor: pointer;
+	}
 
-  &__label--checkbox {
-    display: flex;
-    align-items: center;
-    gap: 10.62px;
-  }
+	&__label--checkbox {
+		display: flex;
+		align-items: center;
+		gap: 10.62px;
+	}
 
-  input[type='checkbox'].invalid + &__checkbox {
-    border: 1px solid red;
-    box-shadow: 0px 0px 5px #ff00004a;
-  }
+	input[type='checkbox'].invalid + &__checkbox {
+		border: 1px solid red;
+		box-shadow: 0px 0px 5px #ff00004a;
+	}
 
-  &__checkbox {
-    width: 15.934px;
-    height: 15.934px;
-    flex-shrink: 0;
-    border-radius: 5.311px;
-    border: 1.328px solid $darkGray;
-    background: $white;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    transition: $defaultTransitionTime;
-  }
+	&__checkbox {
+		width: 15.934px;
+		height: 15.934px;
+		flex-shrink: 0;
+		border-radius: 5.311px;
+		border: 1.328px solid $darkGray;
+		background: $white;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+		transition: $defaultTransitionTime;
+	}
 
-  &__label-text {
-    color: $darkGray;
-    leading-trim: both;
-    text-edge: cap;
-    font-family: $mainFont;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 108%; /* 12.96px */
-    letter-spacing: -0.12px;
-  }
+	&__label-text {
+		color: $darkGray;
+		leading-trim: both;
+		text-edge: cap;
+		font-family: $mainFont;
+		font-size: 12px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 108%; /* 12.96px */
+		letter-spacing: -0.12px;
+	}
 
-  &__label-text-link {
-    color: $darkGray;
-    leading-trim: both;
-    text-edge: cap;
-    font-family: $mainFont;
-    text-decoration-line: underline;
-    transition: $defaultTransitionTime;
-    &:hover {
-      color: $orange;
-    }
-  }
+	&__label-text-link {
+		color: $blue;
+		leading-trim: both;
+		text-edge: cap;
+		font-family: $mainFont;
+		text-decoration-line: underline;
+		transition: $defaultTransitionTime;
+		&:hover {
+			color: $orange;
+		}
+	}
 
-  &__btn {
-    width: 100%;
-    padding: 18px 24px;
-    border-radius: 132.78px;
-    background: $blue;
-    color: $white;
-    text-align: center;
-    leading-trim: both;
-    text-edge: cap;
-    font-family: $mainFont;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 108%; /* 16.2px */
-    letter-spacing: -0.15px;
-    text-transform: uppercase;
-    border: none;
-    @include click();
-    &:hover {
-      background-color: transparent;
-      color: $blue;
-      outline: 1px solid $blue;
-    }
-  }
+	&__btn {
+		width: 100%;
+		padding: 18px 24px;
+		border-radius: 132.78px;
+		background: $blue;
+		color: $white;
+		text-align: center;
+		leading-trim: both;
+		text-edge: cap;
+		font-family: $mainFont;
+		font-size: 15px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 108%; /* 16.2px */
+		letter-spacing: -0.15px;
+		text-transform: uppercase;
+		border: none;
+		@include click();
+		&:hover {
+			background-color: transparent;
+			color: $blue;
+			outline: 1px solid $blue;
+		}
+	}
 
-  // @media (max-width: 1280px) {
-  //   padding: 32px;
-  //   &__fieldset {
-  //     margin-bottom: 12px;
-  //   }
-  //   &__btn {
-  //     padding: 24px 18.5px;
-  //     font-size: 16px;
-  //     font-style: normal;
-  //     font-weight: 400;
-  //     line-height: 108%; /* 17.28px */
-  //     letter-spacing: -0.16px;
-  //   }
-  //   &__text {
-  //     max-width: 324px;
-  //     margin-bottom: 24px;
-  //     font-size: 20px;
-  //     font-style: normal;
-  //     font-weight: 500;
-  //     line-height: 110%; /* 22px */
-  //     letter-spacing: -0.2px;
-  //   }
+	// @media (max-width: 1280px) {
+	//   padding: 32px;
+	//   &__fieldset {
+	//     margin-bottom: 12px;
+	//   }
+	//   &__btn {
+	//     padding: 24px 18.5px;
+	//     font-size: 16px;
+	//     font-style: normal;
+	//     font-weight: 400;
+	//     line-height: 108%; /* 17.28px */
+	//     letter-spacing: -0.16px;
+	//   }
+	//   &__text {
+	//     max-width: 324px;
+	//     margin-bottom: 24px;
+	//     font-size: 20px;
+	//     font-style: normal;
+	//     font-weight: 500;
+	//     line-height: 110%; /* 22px */
+	//     letter-spacing: -0.2px;
+	//   }
 
-  //   &__label-text {
-  //     font-size: 14px;
-  //     font-style: normal;
-  //     font-weight: 400;
-  //     line-height: 108%;
-  //     letter-spacing: -0.14px;
-  //   }
+	//   &__label-text {
+	//     font-size: 14px;
+	//     font-style: normal;
+	//     font-weight: 400;
+	//     line-height: 108%;
+	//     letter-spacing: -0.14px;
+	//   }
 
-  //   &__input {
-  //     height: 59px;
-  //     font-size: 16px;
-  //     font-style: normal;
-  //     font-weight: 400;
-  //     line-height: 108%;
-  //     letter-spacing: -0.16px;
-  //   }
-  // }
+	//   &__input {
+	//     height: 59px;
+	//     font-size: 16px;
+	//     font-style: normal;
+	//     font-weight: 400;
+	//     line-height: 108%;
+	//     letter-spacing: -0.16px;
+	//   }
+	// }
 }

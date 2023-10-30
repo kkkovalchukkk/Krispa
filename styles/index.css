@@ -4414,7 +4414,7 @@ input[type=checkbox].invalid + .form__checkbox {
   letter-spacing: -0.12px;
 }
 .form__label-text-link {
-  color: #999999;
+  color: #0069a3;
   leading-trim: both;
   text-edge: cap;
   font-family: "Lato", sans-serif;
