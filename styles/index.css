@@ -163,6 +163,10 @@ body.no-scroll {
   overflow: hidden;
 }
 
+.swiper-wrapper {
+  width: 101% !important;
+}
+
 .swiper-button-disabled {
   opacity: 0.5;
 }
@@ -1721,9 +1725,7 @@ input[type=checkbox]:checked + .form__checkbox {
   }
 }
 .consult-section .form {
-  padding: 36px 44.25px;
-  padding-bottom: 31px;
-  padding-right: 18.75px;
+  padding: 36px 18.75px 31px 44.25px;
 }
 .consult-section .form__text {
   width: 100%;
