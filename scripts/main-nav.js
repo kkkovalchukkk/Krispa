@@ -17,51 +17,37 @@ window.addEventListener('DOMContentLoaded', () => {
   const main = document.querySelector('.main')
   const sidebar = document.querySelector('.sidebar')
 
-
   let isFixed = false
-  window.onscroll = function () {
-    const currentPosition = window.scrollY || document.documentElement.scrollTop
-    const header = document.querySelector('.header')
-    const navigationSection = document.querySelector('.navigation-section')
+  let lastScrollPosition = 0
 
-    const currentSection = document.querySelector('.navigation-section')
-    const threshold = 130
-    if (currentPosition >= threshold && !isFixed) {
+  window.onscroll = function () {
+    const header = document.querySelector('.header')
+    const navSection = document.querySelector('.navigation-section')
+    let currentPosition = window.scrollY || document.documentElement.scrollTop
+
+    if (currentPosition >= 130 && !isFixed && currentPosition > lastScrollPosition) {
       if (sidebar) {
         sidebar.style.top = '160px'
       }
 
-      // if (currentSection) {
-      //   const nextSection = currentSection.nextElementSibling
-
-      //   if (nextSection) {
-      //     nextSection.style.position = 'relative'
-      //     nextSection.style.top = '40px'
-      //   }
-      // }
-
-      main.style.marginTop = '240px'
       header.classList.add('fixed')
-      navigationSection.classList.add('fixed')
+      navSection.classList.add('fixed')
+
+      header.style.paddingBottom = header.offsetHeight + 'px'
       isFixed = true
-    } else if (currentPosition < threshold && isFixed) {
+    } else if (currentPosition < 130 && isFixed) {
       if (sidebar) {
         sidebar.style.top = '16px'
       }
 
-      // if (currentSection) {
-      //   const nextSection = currentSection.nextElementSibling
-
-      //   if (nextSection) {
-      //     nextSection.style.position = 'initial'
-      //   }
-      // }
-
-      main.style.marginTop = '20px'
       header.classList.remove('fixed')
-      navigationSection.classList.remove('fixed')
+      navSection.classList.remove('fixed')
+
+      header.style.paddingBottom = ''
       isFixed = false
     }
+
+    lastScrollPosition = currentPosition
   }
 
 

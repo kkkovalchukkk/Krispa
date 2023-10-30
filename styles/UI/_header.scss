@@ -1,17 +1,17 @@
 .header {
 	width: 100%;
 	padding: 0px 16px;
-	transition: $defaultTransitionTime;
+	// transition: $defaultTransitionTime;
 
 	&.fixed {
-		// position: sticky;
-		position: fixed;
+		position: sticky;
+		// position: fixed;
 		left: 0;
 		top: 0;
 		z-index: 999;
 
 		.header__wrapper {
-			padding: 14px 36px;
+			padding: 18px 36px;
 			border-radius: 0;
 			box-shadow: none;
 			max-width: 1183px;

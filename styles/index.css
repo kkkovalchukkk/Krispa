@@ -3417,16 +3417,15 @@ input[type=checkbox]:checked + .form__checkbox {
 .header {
   width: 100%;
   padding: 0px 16px;
-  transition: 0.23s;
 }
 .header.fixed {
-  position: fixed;
+  position: sticky;
   left: 0;
   top: 0;
   z-index: 999;
 }
 .header.fixed .header__wrapper {
-  padding: 14px 36px;
+  padding: 18px 36px;
   border-radius: 0;
   box-shadow: none;
   max-width: 1183px;
@@ -7885,9 +7884,6 @@ input[type=checkbox].invalid + .form__checkbox {
   row-gap: 29px;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
-}
-.mat-cat-section__sidebar {
-  margin-top: 79px;
 }
 .mat-cat-section-card__link {
   position: initial;
