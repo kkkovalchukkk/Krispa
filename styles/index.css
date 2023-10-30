@@ -3777,7 +3777,7 @@ input[type=checkbox]:checked + .form__checkbox {
 .main-nav-list-item__submenu {
   box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.04);
   position: absolute;
-  left: -37px;
+  left: -52px;
   top: 100%;
   width: calc(100% + 28px + 46px);
   height: -moz-fit-content;
