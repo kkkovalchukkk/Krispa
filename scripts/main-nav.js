@@ -51,10 +51,19 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 
 
+  const checkOrientation = () => {
+    if (!window.matchMedia("(orientation: portrait)").matches) {
+      mobileMenu.style.marginBottom = '0px'
+    }
+  }
+  window.addEventListener("resize", checkOrientation)
+
+
   mobileNavBtn.addEventListener('click', () => {
     mobileMenu.classList.toggle('mobile-menu-unvisible')
     mobileNavBtnInner.classList.toggle('mobile-menu__nav-block--submenu--nonDisplayed')
   })
+
 
   backButton?.addEventListener('click', () => {
     mobileMenuSubmenu.classList.toggle('mobile-menu__nav-block--submenu--nonDisplayed')
