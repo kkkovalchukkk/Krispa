@@ -164,7 +164,7 @@ body.no-scroll {
 }
 
 .swiper-wrapper {
-  width: 101% !important;
+  width: 100.3% !important;
 }
 
 .swiper-button-disabled {
@@ -2580,7 +2580,7 @@ input[type=checkbox]:checked + .form__checkbox {
   align-items: flex-start;
 }
 .team-section__swiper {
-  width: 100%;
+  width: 100.5%;
   height: -moz-fit-content;
   height: fit-content;
 }
