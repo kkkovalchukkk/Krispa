@@ -167,6 +167,14 @@ body.no-scroll {
   width: 100.3% !important;
 }
 
+.swiper-wrapper-average {
+  width: 100.7% !important;
+}
+
+.swiper-wrapper__bigger {
+  width: 101.3% !important;
+}
+
 .swiper-button-disabled {
   opacity: 0.5;
 }
@@ -1669,7 +1677,7 @@ input[type=checkbox]:checked + .form__checkbox {
 .consult-section__wrapper {
   display: grid;
   grid-template-columns: 62% 36.3%;
-  gap: 20px;
+  gap: 21px;
 }
 .consult-section__image-block {
   padding-top: 36px;
@@ -2059,7 +2067,6 @@ input[type=checkbox]:checked + .form__checkbox {
   margin-right: 53px;
 }
 .win-section__swiper {
-  width: 100%;
   height: auto;
 }
 .win-section__swiper-slide {
@@ -2729,7 +2736,7 @@ input[type=checkbox]:checked + .form__checkbox {
 }
 .materials-section__swiper-slide {
   width: 100%;
-  max-width: calc(25% - 20px);
+  max-width: calc(25% - 22px);
 }
 .materials-section__mobile-btn {
   display: none;
@@ -2886,7 +2893,7 @@ input[type=checkbox]:checked + .form__checkbox {
 }
 .request-section__wrapper {
   display: grid;
-  gap: 20px;
+  gap: 17px;
   grid-template-columns: 61.89% 36.83%;
 }
 .request-section__image-block {
