@@ -1668,7 +1668,7 @@ input[type=checkbox]:checked + .form__checkbox {
 }
 .consult-section__wrapper {
   display: grid;
-  grid-template-columns: 61.93% 36.85%;
+  grid-template-columns: 62% 36.3%;
   gap: 20px;
 }
 .consult-section__image-block {
