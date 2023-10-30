@@ -2,11 +2,10 @@ window.addEventListener('DOMContentLoaded', () => {
   const mainNavListItemSubmenu = document.querySelectorAll('.main-nav-list-item--submenu')
   const mainNav = document.querySelector('.main-nav')
 
-  const sidebarAccordeonBlock = document.querySelector('.sidebar__accordion-list')
-  const allReviewsForm = document.querySelector('.all-reviews-section__form')
 
   const closeBurgerMenuBtn = document.querySelector('.mobile-menu__close-btn')
   const mobileMenu = document.querySelector('.mobile-menu__nav')
+  const mobileMenuFooter = document.querySelector('.mobile-menu__info-list')
   const mobileMenuSubmenu = document.querySelector('.mobile-menu-submenu')
   const mobileNavBtn = document.querySelector('.mobile-menu__nav-block--submenu--btn')
   const mobileNavBtnInner = document.querySelector('.mobile-menu__nav-block--submenu--nonDisplayed')
@@ -14,7 +13,6 @@ window.addEventListener('DOMContentLoaded', () => {
   const mobileInnerContentBtns = document.querySelectorAll('.mobile-menu__nav-block--submenu-btn')
   const backButton = document.querySelector('.back-button')
 
-  const main = document.querySelector('.main')
   const sidebar = document.querySelector('.sidebar')
 
   let isFixed = false
@@ -51,12 +49,12 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 
 
-  const checkOrientation = () => {
-    if (!window.matchMedia("(orientation: portrait)").matches) {
-      mobileMenu.style.marginBottom = '0px'
-    }
-  }
-  window.addEventListener("resize", checkOrientation)
+  // const checkOrientation = () => {
+  //   if (!window.matchMedia("(orientation: portrait)").matches) {
+  //     mobileMenu.style.marginBottom = '0px'
+  //   }
+  // }
+  // window.addEventListener("resize", checkOrientation)
 
 
   mobileNavBtn.addEventListener('click', () => {
@@ -81,7 +79,6 @@ window.addEventListener('DOMContentLoaded', () => {
       mobileMenuSubmenu.classList.toggle('mobile-menu__nav-block--submenu--nonDisplayed')
       mobileMenu.classList.remove('mobile-menu-unvisible')
     }
-    mobileMenu.style.marginBottom = '100px'
   })
 
   mobileInnerContentBtns.forEach((btn, index) => {
@@ -93,7 +90,12 @@ window.addEventListener('DOMContentLoaded', () => {
           if (content.classList.contains('mobile-menu__nav-block--submenu__li-nav-showedContent')) {
             content.classList.remove('mobile-menu__nav-block--submenu__li-nav-showedContent')
             content.classList.add('mobile-menu__nav-block--submenu__li-nav')
+
+            mobileMenuFooter.classList.remove('mobile-menu__info-list--active')
+            // mobileMenuFooter.style.position = 'relative'
+            // mobileMenuFooter.style.marginTop = '-200px'
             mobileMenu.style.marginBottom = '42px'
+
             if (svg) {
               svg.style.transform = 'rotate(0deg)'
               svg.style.transition = 'transform 0.23s'
@@ -101,7 +103,9 @@ window.addEventListener('DOMContentLoaded', () => {
           } else {
             content.classList.add('mobile-menu__nav-block--submenu__li-nav-showedContent')
             content.classList.remove('mobile-menu__nav-block--submenu__li-nav')
-            // mobileMenu.style.marginBottom = '-262px'
+
+            mobileMenuFooter.classList.add('mobile-menu__info-list--active')
+
             if (svg) {
               svg.style.transform = 'rotate(180deg)'
               svg.style.transition = 'transform 0.23s'

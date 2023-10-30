@@ -19,6 +19,7 @@
 	transform: translateY(-100%);
 	z-index: 99999;
 	overflow-y: auto;
+
 	&--active {
 		visibility: visible;
 		opacity: 1;
@@ -185,6 +186,18 @@
 	}
 
 	&__info-list {
+		position: absolute;
+		bottom: 56px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		justify-content: start;
+		gap: 24px;
+	}
+
+	&__info-list--active {
+		position: relative;
+		margin-top: -200px;
 		display: flex;
 		flex-direction: column;
 		align-items: flex-end;
@@ -277,4 +290,9 @@
 			padding-left: 24px;
 		}
 	}
+}
+
+.nav-block {
+	align-items: end !important;
+	text-align: end !important;
 }
