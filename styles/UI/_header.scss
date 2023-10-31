@@ -205,8 +205,9 @@
 
 	@media (max-width: 1024px) {
 		padding: 0px 32px;
+
 		&__wrapper {
-			padding: 32px;
+			padding: 32px !important;
 		}
 
 		&__burger-btn {
@@ -250,7 +251,7 @@
 
 	@media (max-width: 768px) {
 		&__wrapper {
-			padding: 18px 24px;
+			padding: 31px 24px !important;
 		}
 		&__logo-image {
 			width: 49px;
@@ -289,7 +290,7 @@
 
 	@media (max-width: 568px) {
 		&__wrapper {
-			padding: 19px 20px;
+			padding: 20px 23px !important;
 		}
 	}
 
@@ -306,6 +307,12 @@
 		}
 		&__icon-link {
 			display: initial;
+		}
+	}
+
+	@media (max-width: 375px) {
+		&__wrapper {
+			padding: 15px 16px !important;
 		}
 	}
 }

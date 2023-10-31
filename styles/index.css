@@ -3612,7 +3612,7 @@ input[type=checkbox]:checked + .form__checkbox {
     padding: 0px 32px;
   }
   .header__wrapper {
-    padding: 32px;
+    padding: 32px !important;
   }
   .header__burger-btn {
     display: initial;
@@ -3650,7 +3650,7 @@ input[type=checkbox]:checked + .form__checkbox {
 }
 @media (max-width: 768px) {
   .header__wrapper {
-    padding: 18px 24px;
+    padding: 31px 24px !important;
   }
   .header__logo-image, .mobile-menu__logo-image, .footer__logo-image {
     width: 49px;
@@ -3688,7 +3688,7 @@ input[type=checkbox]:checked + .form__checkbox {
 }
 @media (max-width: 568px) {
   .header__wrapper {
-    padding: 19px 20px;
+    padding: 20px 23px !important;
   }
 }
 @media (max-width: 567px) {
@@ -3706,6 +3706,11 @@ input[type=checkbox]:checked + .form__checkbox {
   }
   .header__icon-link {
     display: initial;
+  }
+}
+@media (max-width: 375px) {
+  .header__wrapper {
+    padding: 15px 16px !important;
   }
 }
 
