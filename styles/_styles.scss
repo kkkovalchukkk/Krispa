@@ -152,6 +152,11 @@ body.no-scroll {
 	@media (max-width: 960px) {
 	}
 }
+
+.swiper-wrapper {
+	align-items: baseline;
+}
+
 .navigation-section {
 	padding: 0 16px;
 	margin: 15px 0px;

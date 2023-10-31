@@ -18,6 +18,7 @@
 }
 .accordeon {
 	width: 100%;
+	min-width: 290px;
 	height: fit-content;
 	padding-top: 16px;
 	padding-left: 32px;
@@ -212,7 +213,7 @@
 		line-height: 110%; /* 16.5px */
 		letter-spacing: -0.15px;
 		position: relative;
-		padding-left: 20px;
+		// padding-left: 20px;
 	}
 
 	ul {
