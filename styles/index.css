@@ -2067,6 +2067,7 @@ input[type=checkbox]:checked + .form__checkbox {
   margin-right: 53px;
 }
 .win-section__swiper {
+  width: 100%;
   height: auto;
 }
 .win-section__swiper-slide {
@@ -3866,7 +3867,8 @@ input[type=checkbox]:checked + .form__checkbox {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: end;
+  text-align: end;
   justify-content: start;
   gap: 16px;
 }
