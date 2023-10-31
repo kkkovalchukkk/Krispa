@@ -342,6 +342,7 @@ body.no-scroll {
 @media (max-width: 1023px) {
   .navigation-section {
     margin: 0;
+    width: 0;
   }
 }
 
