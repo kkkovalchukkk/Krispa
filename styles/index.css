@@ -6271,7 +6271,6 @@ input[type=checkbox].invalid + .form__checkbox {
   display: flex;
   flex-direction: column;
 }
-.category-section-accoredeon__text h2,
 .category-section-accoredeon__text h3,
 .category-section-accoredeon__text h4,
 .category-section-accoredeon__text h5,
@@ -6309,9 +6308,6 @@ input[type=checkbox].invalid + .form__checkbox {
 .category-section__text-content-block ol {
   flex-direction: column !important;
   gap: 8px !important;
-}
-.category-section__text-content-block h2 {
-  font-size: 16px;
 }
 .category-section__top {
   padding: 36px;
@@ -6478,22 +6474,19 @@ input[type=checkbox].invalid + .form__checkbox {
   padding-left: 10px;
 }
 .category-section__text-content h2 {
-  margin-bottom: 25px;
+  width: 100%;
+  margin-bottom: 45px;
   color: #13151c;
-  leading-trim: both;
-  text-edge: cap;
   font-family: "Lato", sans-serif;
-  font-size: 18px;
+  font-size: 45px;
   font-style: normal;
   font-weight: 500;
   line-height: 110%;
-  letter-spacing: -0.18px;
+  letter-spacing: -0.45px;
 }
 .category-section__text-content h3 {
   margin-bottom: 25px;
   color: #13151c;
-  leading-trim: both;
-  text-edge: cap;
   font-family: "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -6927,6 +6920,19 @@ input[type=checkbox].invalid + .form__checkbox {
   .table__value:last-child {
     text-align: right;
   }
+}
+
+.heading {
+  width: 100%;
+  margin-bottom: 53px;
+  color: #13151c;
+  leading-trim: both;
+  font-family: "Lato", sans-serif;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%;
+  letter-spacing: -0.45px;
 }
 
 .win-section--category {

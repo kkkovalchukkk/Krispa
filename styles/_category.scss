@@ -87,7 +87,6 @@
 			flex-direction: column;
 		}
 
-		h2,
 		h3,
 		h4,
 		h5,
@@ -136,9 +135,9 @@
 			gap: 8px !important;
 		}
 
-		h2 {
-			font-size: 16px;
-		}
+		// h2 {
+		// 	font-size: 16px;
+		// }
 	}
 
 	&__top {
@@ -331,22 +330,20 @@
 		}
 
 		h2 {
-			margin-bottom: 25px;
+			width: 100%;
+			margin-bottom: 45px;
 			color: $black;
-			leading-trim: both;
-			text-edge: cap;
 			font-family: $mainFont;
-			font-size: 18px;
+			font-size: 45px;
 			font-style: normal;
 			font-weight: 500;
 			line-height: 110%;
-			letter-spacing: -0.18px;
+			letter-spacing: -0.45px;
 		}
+
 		h3 {
 			margin-bottom: 25px;
 			color: $black;
-			leading-trim: both;
-			text-edge: cap;
 			font-family: $mainFont;
 			font-size: 16px;
 			font-style: normal;
@@ -791,6 +788,19 @@
 			}
 		}
 	}
+}
+
+.heading {
+	width: 100%;
+	margin-bottom: 53px;
+	color: $black;
+	leading-trim: both;
+	font-family: $mainFont;
+	font-size: 45px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 110%;
+	letter-spacing: -0.45px;
 }
 
 .win-section--category {
