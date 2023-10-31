@@ -49,14 +49,6 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 
 
-  // const checkOrientation = () => {
-  //   if (!window.matchMedia("(orientation: portrait)").matches) {
-  //     mobileMenu.style.marginBottom = '0px'
-  //   }
-  // }
-  // window.addEventListener("resize", checkOrientation)
-
-
   mobileNavBtn.addEventListener('click', () => {
     mobileMenu.classList.toggle('mobile-menu-unvisible')
     mobileNavBtnInner.classList.toggle('mobile-menu__nav-block--submenu--nonDisplayed')
@@ -66,12 +58,38 @@ window.addEventListener('DOMContentLoaded', () => {
   backButton?.addEventListener('click', () => {
     mobileMenuSubmenu.classList.toggle('mobile-menu__nav-block--submenu--nonDisplayed')
     mobileMenu.classList.remove('mobile-menu-unvisible')
+
+    mobileBlocksInnerContent.forEach(content => {
+      if (content.classList.contains('mobile-menu__nav-block--submenu__li-nav-showedContent')) {
+        mobileMenuFooter.classList.remove('mobile-menu__info-list--active')
+        content.classList.remove('mobile-menu__nav-block--submenu__li-nav-showedContent')
+        content.classList.add('mobile-menu__nav-block--submenu__li-nav')
+
+        mobileInnerContentBtns.forEach(btn => {
+          const svg = btn.querySelector('svg')
+          if (svg) {
+            svg.style.transform = 'rotate(0deg)'
+            svg.style.transition = 'transform 0.23s'
+          }
+        })
+      }
+    })
   })
 
   closeBurgerMenuBtn.addEventListener('click', () => {
     mobileBlocksInnerContent.forEach(content => {
       if (content.classList.contains('mobile-menu__nav-block--submenu__li-nav-showedContent')) {
+        mobileMenuFooter.classList.remove('mobile-menu__info-list--active')
         content.classList.remove('mobile-menu__nav-block--submenu__li-nav-showedContent')
+        content.classList.add('mobile-menu__nav-block--submenu__li-nav')
+
+        mobileInnerContentBtns.forEach(btn => {
+          const svg = btn.querySelector('svg')
+          if (svg) {
+            svg.style.transform = 'rotate(0deg)'
+            svg.style.transition = 'transform 0.23s'
+          }
+        })
       }
     })
 
@@ -80,6 +98,7 @@ window.addEventListener('DOMContentLoaded', () => {
       mobileMenu.classList.remove('mobile-menu-unvisible')
     }
   })
+
 
   mobileInnerContentBtns.forEach((btn, index) => {
     const svg = btn.querySelector('svg')
@@ -92,8 +111,6 @@ window.addEventListener('DOMContentLoaded', () => {
             content.classList.add('mobile-menu__nav-block--submenu__li-nav')
 
             mobileMenuFooter.classList.remove('mobile-menu__info-list--active')
-            // mobileMenuFooter.style.position = 'relative'
-            // mobileMenuFooter.style.marginTop = '-200px'
             mobileMenu.style.marginBottom = '42px'
 
             if (svg) {
