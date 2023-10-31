@@ -6882,7 +6882,7 @@ input[type=checkbox].invalid + .form__checkbox {
 }
 .table__row {
   width: 100%;
-  padding: 24px 0px;
+  padding: 18px 0px;
   border-bottom: 1px solid #eaeaea;
   display: flex;
   align-items: center;
