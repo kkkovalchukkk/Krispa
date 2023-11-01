@@ -35,7 +35,7 @@ window.addEventListener('DOMContentLoaded', () => {
       isFixed = true
     } else if (currentPosition < 130 && isFixed) {
       if (sidebar) {
-        sidebar.style.top = '16px'
+        sidebar.style.top = '16'
       }
 
       header.classList.remove('fixed')

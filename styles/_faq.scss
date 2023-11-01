@@ -12,6 +12,7 @@
 	align-items: flex-start;
 	justify-content: start;
 	gap: 20px;
+
 	&__nav {
 		width: 100%;
 		padding: 36px;
@@ -68,7 +69,7 @@
 	}
 
 	&__block {
-		margin-top: 15px;
+		// margin-top: 15px;
 		width: 100%;
 		max-width: 283px;
 		padding: 30px;

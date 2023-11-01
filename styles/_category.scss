@@ -3,16 +3,16 @@
 }
 
 .category-sidebar {
-	position: sticky;
+	// position: sticky;
 	/* left: 0; */
 	/* top: 16px; */
 	/* width: 100%; */
 	// top: 160px;
-	margin-top: 15px;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	justify-content: start;
+	// margin-top: 15px;
+	// display: flex;
+	// flex-direction: column;
+	// align-items: flex-start;
+	// justify-content: start;
 }
 
 .sidebar__accordeon {
@@ -90,7 +90,7 @@
 	}
 
 	&__form {
-		// margin-top: 15px;
+		margin-top: 15px;
 	}
 
 	&-accoredeon__text {
@@ -747,7 +747,7 @@
 	width: 100%;
 	border-radius: 24px;
 	background: $white;
-	padding: 35px;
+	padding: 36px;
 	box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.04);
 
 	&__header {
@@ -755,7 +755,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		margin-bottom: 36px;
+		margin-bottom: 30px;
 	}
 
 	&__heading {
@@ -789,7 +789,7 @@
 		}
 		&:last-child {
 			border: none;
-			padding: 18px 0;
+			padding: 18px 0 0;
 		}
 	}
 
