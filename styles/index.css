@@ -325,6 +325,11 @@ body.no-scroll {
   padding: 0 16px;
   margin: 15px 0px;
 }
+@media (max-width: 1024px) {
+  .navigation-section {
+    padding: 0 32px;
+  }
+}
 .navigation-section.fixed {
   margin: 0;
   position: sticky;
@@ -3623,13 +3628,6 @@ input[type=checkbox]:checked + .form__checkbox {
   .header__wrapper {
     padding: 32px !important;
   }
-  .header__burger-btn {
-    display: initial;
-    margin-left: 16px;
-    border: none;
-    background: none;
-    padding: 0;
-  }
   .header__tel-group {
     display: none;
   }
@@ -3643,6 +3641,13 @@ input[type=checkbox]:checked + .form__checkbox {
 @media (max-width: 1023px) {
   .header {
     margin-bottom: 10px;
+    padding: 0;
+  }
+  .header__burger-btn {
+    display: initial;
+    margin-left: 16px;
+    border: none;
+    background: none;
     padding: 0;
   }
   .header__wrapper {

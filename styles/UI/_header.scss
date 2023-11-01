@@ -210,14 +210,6 @@
 			padding: 32px !important;
 		}
 
-		&__burger-btn {
-			display: initial;
-			margin-left: 16px;
-			border: none;
-			background: none;
-			padding: 0;
-		}
-
 		&__tel-group {
 			display: none;
 		}
@@ -234,6 +226,15 @@
 	@media (max-width: 1023px) {
 		margin-bottom: 10px;
 		padding: 0;
+
+		&__burger-btn {
+			display: initial;
+			margin-left: 16px;
+			border: none;
+			background: none;
+			padding: 0;
+		}
+
 		&__wrapper {
 			border-radius: 0;
 		}
