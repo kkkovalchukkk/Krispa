@@ -3625,9 +3625,6 @@ input[type=checkbox]:checked + .form__checkbox {
   .header {
     padding: 0px 32px;
   }
-  .header__wrapper {
-    padding: 32px !important;
-  }
   .header__tel-group {
     display: none;
   }
