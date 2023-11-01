@@ -153,6 +153,10 @@ body.no-scroll {
 	}
 }
 
+.wrapper-align-unset {
+	align-items: unset !important;
+}
+
 .swiper-wrapper {
 	align-items: baseline;
 }
@@ -160,7 +164,6 @@ body.no-scroll {
 .navigation-section {
 	padding: 0 16px;
 	margin: 15px 0px;
-	// transition: $defaultTransitionTime;
 
 	&.fixed {
 		margin: 0;
